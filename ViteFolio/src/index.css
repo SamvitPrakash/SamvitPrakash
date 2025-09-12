@@ -18,6 +18,10 @@
   --current-accent: var(--light-accent);
 
   background-color: var(--current-background);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Commissioner:700|Commissioner:400');
