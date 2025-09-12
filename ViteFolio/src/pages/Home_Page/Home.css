@@ -1,0 +1,23 @@
+.name{
+    color: var(--current-primary);
+}
+
+.title{
+    color: var(--current-text);
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.bio{
+    color: var(--current-text);
+    text-wrap: balance;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+em{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--current-primary);
+    font-weight: 700;
+}
