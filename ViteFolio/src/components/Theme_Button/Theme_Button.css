@@ -1,0 +1,18 @@
+.light-mode {
+  background-color: var(--dark-background);
+  background-image: URL('../../assets/Theme_Button/dark_mode.svg');
+  color: var(--dark-text);
+}
+
+.dark-mode {
+  background-color: var(--light-background);
+  background-image: URL('../../assets/Theme_Button/dark_mode.svg');
+  color: var(--light-text);
+}
+#theme-button {
+    background-image: URL('../../assets/Theme_Button/dark_mode.svg');
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
