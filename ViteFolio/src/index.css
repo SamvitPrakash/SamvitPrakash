@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Commissioner:700|Commissioner:400');
+
 :root {
   --light-text: #12200e;
   --light-background: #ecf7e9;
@@ -23,8 +25,6 @@
   padding: 0rem;
   text-align: center;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Commissioner:700|Commissioner:400');
 
 body {
   font-family: 'Commissioner';
