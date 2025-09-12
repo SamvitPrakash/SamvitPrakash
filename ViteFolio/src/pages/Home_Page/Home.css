@@ -5,12 +5,16 @@
 .title{
     color: var(--current-text);
     margin-top: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .bio{
     color: var(--current-text);
-    text-wrap: balance;
+    text-wrap: pretty;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
