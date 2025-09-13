@@ -1,6 +1,75 @@
 .education-card{
-    margin-top: 10rem;
-    background: rgba(255, 255, 255, 0.8);
-    /* backdrop-filter: blur(6px); */
-    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--current-background);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
+    max-width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--current-primary);
+}
+
+.education-card:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.education-header {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0.7rem;
+}
+
+.education-institution{
+    color: var(--current-primary);
+    margin: 0.2rem;
+}
+
+.education-header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.education-body p {
+    color: var(--current-text);
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.education-body h5{
+    color: var(--current-primary);
+    text-align: left;;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-degree-button{
+    background-color: var(--current-accent);
+    color: var(--current-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;            
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
 }
