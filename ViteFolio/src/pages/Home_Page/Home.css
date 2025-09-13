@@ -15,7 +15,7 @@
     margin-right: auto;
     width: 80%;
     margin-top: 0rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 em{
@@ -26,6 +26,11 @@ em{
 }
 
 h1{
+    color: var(--current-text);
+
+}
+
+h2{
     color: var(--current-text);
 
 }
