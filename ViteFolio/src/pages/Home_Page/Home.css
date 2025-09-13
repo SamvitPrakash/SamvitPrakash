@@ -3,7 +3,6 @@
 }
 
 .title{
-    color: var(--current-text);
     margin-top: 1rem;
     margin-bottom: 5rem;
 }
@@ -16,7 +15,7 @@
     margin-right: auto;
     width: 80%;
     margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 10rem;
 }
 
 em{
@@ -24,4 +23,9 @@ em{
     font-style: normal;
     color: var(--current-primary);
     font-weight: 700;
+}
+
+h1{
+    color: var(--current-text);
+
 }
