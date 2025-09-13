@@ -3,10 +3,10 @@ import './Education_Card.css';
 function EducationCard(){
     return(
         <div className="education-card">
-            <h2>Education</h2>
+            <img src='../../assets/Theme_Button/dark_mode.svg'></img>
             <div className="education-item">
-                <h3>BSc Computer Science</h3>
-                <p>University of Pretoria</p>
+                <h4>BSc Computer Science</h4>
+                <h5>University of Pretoria</h5>
                 <p>2023 - Present</p>
             </div>
         </div>
