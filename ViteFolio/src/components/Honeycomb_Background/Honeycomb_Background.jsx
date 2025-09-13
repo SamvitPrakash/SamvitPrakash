@@ -31,7 +31,7 @@ function HoneycombBackground({ width, height, visibilityMatrix, children }) {
         animateWave();
         intervalId = setInterval(() => {
             animateWave();
-        }, width * height * 60 + 500);
+        }, width * height * 40 );
 
         return () => {
             timeoutIds.forEach(clearTimeout);
