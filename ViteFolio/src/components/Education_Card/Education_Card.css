@@ -59,7 +59,7 @@
 
 .view-degree-button{
     background-color: var(--current-accent);
-    color: var(--current-text);
+    color: var(--current-background);
     border: none;
     padding: 0.5rem 1rem;
     width: fit-content;
