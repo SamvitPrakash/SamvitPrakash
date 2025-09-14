@@ -29,3 +29,42 @@ Welcome to my personal portfolio, **Potential Journey**. This site is crafted to
 ---
 
 Thank you for visiting! Feel free to explore and connect.
+
+# Languages
+
+- React
+- Angular
+- Django
+- JS
+- Node JS
+- TS
+- HTML
+- CSS
+- Python
+- Java
+- C++
+- C
+- C#
+- Delphi
+
+- Scheme
+- Prolog
+- YASM Assembly
+
+# Operating Systems
+
+- Windows
+- Ubuntu
+- Ubuntu Server
+- Arch Linux
+- Garuda Snapdragon
+- Garuda Hyprland
+
+# Tools
+
+- VS Code
+- FileZilla
+- Postman
+- AWS
+- Superbase
+- GitHub
