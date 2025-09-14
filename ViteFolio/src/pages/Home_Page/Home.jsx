@@ -58,7 +58,7 @@ function Home() {
 			[1,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,1,0,0,0,0,0,0,0],
-			[1,0,0,1,0,0,0,1,0,0,0],
+			[0,0,0,1,0,0,0,1,0,0,0],
 			[1,0,0,1,0,0,0,1,1,0,0],
 			[1,0,0,0,0,0,0,0,0,0,0],
 			[1,1,0,0,0,0,0,0,1,0,0],
@@ -155,7 +155,7 @@ function Home() {
 				<h2 className="technical-skills-title"><span className="name">Technical</span> Skills.</h2>
 			</HoneycombBackground>
 
-			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrix2}>
+			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrix2} animate={false}>
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 

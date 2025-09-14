@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react';
 import './Honeycomb_Background.css';
 
-function HoneycombBackground({ width, height, visibilityMatrix, children }) {
+function HoneycombBackground({ width, height, visibilityMatrix, children, animate = true }) {
     const hexRefs = useRef([]);
 
     useEffect(() => {
+        if (!animate) return;
+
         const hexList = [];
         for (let col = 0; col < width; col++) {
             for (let row = 0; row < height; row++) {
@@ -37,7 +39,7 @@ function HoneycombBackground({ width, height, visibilityMatrix, children }) {
             timeoutIds.forEach(clearTimeout);
             clearInterval(intervalId);
         };
-    }, [width, height, visibilityMatrix]);
+    }, [width, height, visibilityMatrix, animate]);
 
     if (!hexRefs.current.length || hexRefs.current.length !== height) {
         hexRefs.current = Array.from({ length: height }, () =>

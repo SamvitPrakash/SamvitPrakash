@@ -25,7 +25,7 @@
 }
 
 .skill-node:hover .skill-icon {
-    animation-play-state: running;
+    /* animation-play-state: running; */
 }
 
 .skill-icon {

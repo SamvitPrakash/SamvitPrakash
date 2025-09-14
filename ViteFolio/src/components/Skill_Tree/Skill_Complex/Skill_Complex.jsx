@@ -57,7 +57,7 @@ function SkillComplex({ nodes, edges }) {
               to={toNode}
               color="var(--current-primary)"
               bulgeColor="var(--current-accent)"
-              period={2.5}
+              period={6}
             />
           );
         })}
