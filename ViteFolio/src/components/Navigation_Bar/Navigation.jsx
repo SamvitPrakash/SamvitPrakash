@@ -13,12 +13,14 @@ const Navigation = () => {
 			document.documentElement.style.setProperty('--current-primary', 'var(--dark-primary)');
 			document.documentElement.style.setProperty('--current-secondary', 'var(--dark-secondary)');
 			document.documentElement.style.setProperty('--current-accent', 'var(--dark-accent)');
+			document.documentElement.style.setProperty('--opposite-text', 'var(--light-text)');
 		} else {
 			document.documentElement.style.setProperty('--current-text', 'var(--light-text)');
 			document.documentElement.style.setProperty('--current-background', 'var(--light-background)');
 			document.documentElement.style.setProperty('--current-primary', 'var(--light-primary)');
 			document.documentElement.style.setProperty('--current-secondary', 'var(--light-secondary)');
 			document.documentElement.style.setProperty('--current-accent', 'var(--light-accent)');
+			document.documentElement.style.setProperty('--opposite-text', 'var(--dark-text)');
 		}
 	}
 

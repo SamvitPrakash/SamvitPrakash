@@ -2,7 +2,7 @@
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 10px;
-    background-color: var(--current-background);
+    background-color: var(--current-primary);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
     max-width: 25rem;
     height: 24rem;
@@ -24,7 +24,7 @@
 }
 
 .education-institution{
-    color: var(--current-primary);
+    color: var(--current-secondary);
     margin: 0.2rem;
 }
 
@@ -37,6 +37,7 @@
 .education-logo{
     width: 50px;
     height: 50px;
+    background-color: white;
     border-radius: 50%;
     object-fit: contain;
     margin-top: 0.8rem;
@@ -45,14 +46,14 @@
 }
 
 .education-body p {
-    color: var(--current-text);
+    color: var(--opposite-text);
     text-align: left;
     margin-top: 1rem;
 }
 
 .education-body h5{
-    color: var(--current-primary);
-    text-align: left;;
+    color: var(--current-secondary);
+    text-align: left;
     margin-top: 4rem;
     margin-bottom: 0.5rem;
 }

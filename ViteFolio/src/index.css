@@ -19,6 +19,8 @@
   --current-secondary: var(--light-secondary);
   --current-accent: var(--light-accent);
 
+  --opposite-text: var(--dark-text);
+
   background-color: var(--current-background);
   /* max-width: 1280px; */
   margin: 0 auto;
