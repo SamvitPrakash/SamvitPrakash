@@ -58,7 +58,7 @@
     margin-bottom: 0.5rem;
 }
 
-.view-degree-button{
+.view-degree-button {
     background-color: var(--current-accent);
     color: var(--current-background);
     border: none;
@@ -66,11 +66,21 @@
     width: fit-content;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 
+        background-color 0.3s cubic-bezier(.25,.8,.25,1),
+        transform 0.2s cubic-bezier(.25,.8,.25,1),
+        box-shadow 0.2s cubic-bezier(.25,.8,.25,1);
     text-decoration: none;
     font-weight: bold;
     display: flex;            
     align-items: center;
     margin-top: auto;
     margin-left: auto;
+}
+
+.view-degree-button:hover {
+    background-color: var(--current-secondary);
+    color: var(--current-accent);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,0,0,0.12);
 }
