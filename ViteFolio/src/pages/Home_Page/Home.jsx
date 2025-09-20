@@ -1,5 +1,4 @@
 // React and CSS Imports
-import { useState } from "react";
 import './Home.css'
 
 //Component Imports
@@ -8,6 +7,8 @@ import TypedName from "../../components/Typed_Name/Typed_Name.jsx";
 import EducationCard from "../../components/Education_Card/Education_Card.jsx";
 import HoneycombBackground from "../../components/Honeycomb_Background/Honeycomb_Background.jsx";
 import SkillComplex from "../../components/Skill_Tree/Skill_Complex/Skill_Complex.jsx";
+import MinimalCard from '../../components/Minimal_Card/Minimal_Card.jsx';
+import Gallery from '../../components/Gallery/Gallery.jsx';
 
 // Asset Imports
 import upLogo from '../../assets/University_of_Pretoria/UP_logo.jpeg';
@@ -35,12 +36,17 @@ import ubuntu from '../../assets/Skill_Icons/ubuntu.svg';
 import vite from '../../assets/Skill_Icons/vite.svg';
 import vue from '../../assets/Skill_Icons/vue.svg';
 import windows from '../../assets/Skill_Icons/windows.svg';
-
+import aws from '../../assets/Skill_Icons/AWS.svg';
+import github from '../../assets/Skill_Icons/github.svg';
+import mariaDB from '../../assets/Skill_Icons/mariaDB.svg';
+import msAccess from '../../assets/Skill_Icons/msAccess.svg';
+import mySQL from '../../assets/Skill_Icons/mySQL.svg';
+import postgreSQL from '../../assets/Skill_Icons/postgreSQL.svg';
+import phpMyAdmin from '../../assets/Skill_Icons/phpMyAdmin.svg';
 
 
 
 function Home() {
-	const [count, setCount] = useState(0);
 
 	const visibilityMatrix = [
 			[1,1,0,0,0,0,0,0,0,1,1],
@@ -159,8 +165,43 @@ function Home() {
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 
+			<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
+			
+			<Gallery interval={1500} gap={0}>
+				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
+				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
+				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={msAccess} name="MS Access" subtitle={"Database Management System"} />
+				<MinimalCard icon={mariaDB} name="MariaDB" subtitle={"Database Management System"} />
+				<MinimalCard icon={mySQL} name="MySQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />	
 
-			{/* <h1>placeholder</h1> */}
+					{/* Stop Gap Until I Fix The Gallery Circulation Issue  */}
+	
+				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
+				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
+				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={msAccess} name="MS Access" subtitle={"Database Management System"} />
+				<MinimalCard icon={mariaDB} name="MariaDB" subtitle={"Database Management System"} />
+				<MinimalCard icon={mySQL} name="MySQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />	
+				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
+				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
+				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={msAccess} name="MS Access" subtitle={"Database Management System"} />
+				<MinimalCard icon={mariaDB} name="MariaDB" subtitle={"Database Management System"} />
+				<MinimalCard icon={mySQL} name="MySQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />		
+				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
+				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
+				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={msAccess} name="MS Access" subtitle={"Database Management System"} />
+				<MinimalCard icon={mariaDB} name="MariaDB" subtitle={"Database Management System"} />
+				<MinimalCard icon={mySQL} name="MySQL" subtitle={"Database Management System"} />
+				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />	
+			</Gallery>
+
+			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
 
 		</>
 	);

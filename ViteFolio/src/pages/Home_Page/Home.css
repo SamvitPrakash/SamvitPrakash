@@ -33,6 +33,23 @@
     text-align: left;
 }
 
+.skill-tree-description{
+    color: var(--current-text);
+    text-wrap: pretty;
+    text-align: center;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3rem;
+    
+}
+
+.work-experience-title{
+    margin-top: 10rem;
+    text-align: right;
+    padding-right: 15rem;
+}
+
 em{
     text-decoration: none;
     font-style: normal;
