@@ -21,10 +21,9 @@ function Gallery({ children, interval = 1000, gap = 32 }) {
         const id = setInterval(() => {
             setOffset(prev => {
                 const next = (prev + step) % totalWidth + gap;
-                // If we loop back to the start, trigger animation
                 if (next < prev) {
                     setAnimateIn(false);
-                    setTimeout(() => setAnimateIn(true), 10); // retrigger animation
+                    setTimeout(() => setAnimateIn(true), 10);
                 }
                 return next;
             });
