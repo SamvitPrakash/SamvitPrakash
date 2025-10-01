@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, use } from 'react';
 import './Navigation.css';
 import ThemeButton from '../Theme_Button/Theme_Button.jsx';
 
@@ -7,7 +7,12 @@ const Navigation = () => {
 
 	const toggleDarkMode = () => {
 		setIsDarkMode(!isDarkMode);
-		if (!isDarkMode) {
+		localStorage.setItem('darkMode', JSON.stringify(!isDarkMode));
+	};
+
+	useEffect(() => {
+
+		if (isDarkMode) {
 			document.documentElement.style.setProperty('--current-text', 'var(--dark-text)');
 			document.documentElement.style.setProperty('--current-background', 'var(--dark-background)');
 			document.documentElement.style.setProperty('--current-primary', 'var(--dark-primary)');
@@ -22,7 +27,18 @@ const Navigation = () => {
 			document.documentElement.style.setProperty('--current-accent', 'var(--light-accent)');
 			document.documentElement.style.setProperty('--opposite-text', 'var(--dark-text)');
 		}
-	}
+
+	}, [isDarkMode]);
+
+	useEffect(() => {
+		const savedMode = JSON.parse(localStorage.getItem('darkMode'));
+		if (savedMode !== null) setIsDarkMode(savedMode);
+		else {
+			setIsDarkMode(true);
+			localStorage.setItem('darkMode', JSON.stringify(true));
+		}
+
+	}, []);
 
 	return (
 
