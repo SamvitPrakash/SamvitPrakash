@@ -78,6 +78,8 @@ function Home() {
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
 
+	const visibilityMatrix3 = [];
+
 	const nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
 		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
@@ -202,6 +204,8 @@ function Home() {
 			</Gallery>
 
 			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
+
+			
 
 		</>
 	);
