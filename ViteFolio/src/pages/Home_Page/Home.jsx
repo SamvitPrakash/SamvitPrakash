@@ -9,6 +9,7 @@ import HoneycombBackground from "../../components/Honeycomb_Background/Honeycomb
 import SkillComplex from "../../components/Skill_Tree/Skill_Complex/Skill_Complex.jsx";
 import MinimalCard from '../../components/Minimal_Card/Minimal_Card.jsx';
 import Gallery from '../../components/Gallery/Gallery.jsx';
+import FeedCard from '../../components/Feed_Card/Feed_Card.jsx';
 
 // Asset Imports
 import upLogo from '../../assets/University_of_Pretoria/UP_logo.jpeg';
@@ -43,6 +44,7 @@ import msAccess from '../../assets/Skill_Icons/msAccess.svg';
 import mySQL from '../../assets/Skill_Icons/mySQL.svg';
 import postgreSQL from '../../assets/Skill_Icons/postgreSQL.svg';
 import phpMyAdmin from '../../assets/Skill_Icons/phpMyAdmin.svg';
+import sfy from '../../assets/Company_Icons/SFY.jpg';
 
 
 
@@ -78,7 +80,46 @@ function Home() {
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
 
-	const visibilityMatrix3 = [];
+	const visibilityMatrix3 = [
+		[1,1,0,0,0,0,0,0,0,1,1],
+		[1,0,1,0,1,0,1,1,0,1,1],
+		[0,1,0,1,0,1,0,1,1,1,0],
+		[0,0,0,0,1,1,1,1,1,1,0],
+		[0,0,0,1,1,1,0,1,1,1,1],
+		[0,1,0,0,1,1,1,1,1,1,0],
+		[0,1,0,1,1,1,1,1,0,1,1],
+		[1,1,1,0,1,0,1,1,1,1,0],
+		[1,0,0,0,0,0,0,1,0,1,1],
+		[1,0,0,0,0,0,0,1,0,1,1]
+	];
+
+	const experienceFeed = {
+		"experience" : [
+			{
+				'position': 'Job Shadow',
+				'company': 'Software for You (SFY)',
+				'date': '2023',
+				'description': 'The job shadow experience at Software for You (SFY) in 2023 provided hands-on experience in software quality assurance by involving the participant in systems and software testing, ticketing of system errors, and assisting in the resolution of these errors. In addition to practical application, the individual focused on foundational skill development, evidenced by the completion of SQL courses and Java courses.',
+				'icon': sfy
+			},
+			{
+				'position': 'Matric IT Tutor',
+				'company': 'Self-Employed',
+				'date': '2023',
+				'description': 'I worked as a self-employed Information Technology (IT) tutor, specializing in preparing over 20 individual Matric students for their final exams. My tutoring focused on building foundational programming concepts and developing crucial critical thinking and problem-solving skills. A key aspect of my success was employing strong communication skills to effectively break down complex technical material into easily understandable concepts. Key responsibilities included administering and reviewing tailored tests, analyzing common errors to refine instruction, and implementing personalized strategies, which successfully helped one student increase their final marks by 13%. This role underscores my ability to provide effective, results-driven technical instruction and mentorship.',
+				'icon': ehs
+			},
+			{
+				'position': 'Tutor / Lecturer\'s Assistant',
+				'company': 'University of Pretoria',
+				'date': '2024',
+				'description': 'As a Lecturer\'s Assistant/Tutor at the University of Pretoria in 2024, I developed and applied strong problem-solving and communication skills while supporting student learning in technical subjects. Key responsibilities included assisting students with code debugging, setting up and troubleshooting various coding environments, and providing expert support in Linux Systems, specifically demonstrating proficiency with Ubuntu, Arch, and Garuda Distributions. This role highlighted my ability to mentor students effectively and resolve technical challenges in a diverse computing environment.',
+				'icon': upLogo
+			},
+			
+
+		]
+	};
 
 	const nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
@@ -205,7 +246,9 @@ function Home() {
 
 			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
 
-			
+			<HoneycombBackground width={11} height={9} visibilityMatrix={visibilityMatrix3} animate={true}>
+				<FeedCard feed={experienceFeed.experience}/>
+			</HoneycombBackground>
 
 		</>
 	);
