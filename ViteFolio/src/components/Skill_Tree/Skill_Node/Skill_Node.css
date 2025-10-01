@@ -24,10 +24,6 @@
     cursor: pointer;
 }
 
-.skill-node:hover .skill-icon {
-    /* animation-play-state: running; */
-}
-
 .skill-icon {
     width: 40px;
     height: 45px;
@@ -35,13 +31,9 @@
     animation-play-state: paused;
 }
 
-@keyframes spin-hover {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(-360deg);}
-}
-
 .skill-modal{
     background-color: var(--current-text);
+    white-space: nowrap;
     width: fit-content;
     height: fit-content;
     padding-left: 0.5rem;
