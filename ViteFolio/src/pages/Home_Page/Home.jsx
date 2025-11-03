@@ -244,11 +244,7 @@ function Home() {
 				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />	
 			</Gallery>
 
-			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
-
-			<HoneycombBackground width={11} height={9} visibilityMatrix={visibilityMatrix3} animate={true}>
-				<FeedCard feed={experienceFeed.experience}/>
-			</HoneycombBackground>
+			{/* <h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2> */}
 
 		</>
 	);
