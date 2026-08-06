@@ -80,18 +80,67 @@ function Home() {
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
 
-	const visibilityMatrixExperience = [
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0]
-	];
+const visibilityMatrixExperience = [
+	[1,1,0,0,0,0,0,0,0,0,1],  
+	[1,0,0,0,0,0,0,0,1,1,1],  
+	[0,0,0,0,0,0,0,0,1,1,1],  
+	[0,0,0,0,0,0,0,0,0,0,1],  
+	[0,0,0,0,0,0,0,0,0,1,1],  
+	[0,0,0,0,0,0,0,0,1,1,0],  
+	[0,0,0,0,0,0,0,0,0,1,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0], 
+	[1,0,0,0,0,0,0,0,0,1,0],  
+	[1,1,0,0,0,0,0,0,0,0,1],  
+	[0,1,0,0,0,0,0,0,0,0,0], 
+	[1,1,0,0,0,0,0,0,0,0,0],  
+	[0,0,1,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0], 
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,1,0,0,0,0,1,1],  
+	[1,0,0,0,0,1,0,0,1,1,1],  
+	[0,0,0,0,0,0,0,0,1,1,0],  
+	[0,0,0,0,0,0,0,0,0,0,1], 
+	[0,0,0,0,0,0,0,0,0,1,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,1,0,0,0,0,0,0,1,0,0],  
+	[1,0,0,0,0,0,0,1,1,0,0],  
+	[1,1,0,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,1,0,0,0,0,0,0,0,0,0], 
+	[0,1,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,1,1,0,0,0,1],  
+	[0,0,0,0,1,1,1,0,0,0,0],  
+	[0,0,0,0,0,0,0,1,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,1],  
+	[0,0,0,0,0,0,0,0,1,1,1],  
+	[0,0,0,0,0,0,0,0,1,1,0],  
+	[0,0,0,0,0,0,0,0,0,1,0],  
+	[0,0,0,0,0,0,0,0,0,0,1],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,1,0,0,0,0,0,0,0,0,0],  
+	[0,1,1,0,0,0,0,0,0,0,0],  
+	[1,0,0,0,0,0,0,0,0,0,0],  
+	[1,1,0,0,0,0,0,0,0,0,0],  
+	[1,1,0,0,0,0,0,0,0,0,1],  
+	[0,0,0,0,0,0,0,0,0,1,0],  
+	[0,1,0,0,0,0,0,0,1,1,1],  
+	[0,0,0,0,0,0,0,0,0,1,1],  
+	[0,0,0,0,0,0,0,0,1,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,0],  
+	[0,0,0,0,0,0,0,0,0,0,1],  
+	[0,0,0,0,0,0,0,0,0,1,1]   
+];
 
 	const experienceFeed = [
 		{
@@ -100,7 +149,7 @@ function Home() {
 			'date': '2026',
 			'description': 'As a Tutor and Lecturer\'s Assistant for Compiler Construction, I helped students understand the theory and implementation of modern compilers, including lexical analysis, parsing, semantic analysis, type checking, optimisation, and code generation. I guided students through formal language theory, finite automata, context-free grammars, and compiler implementation challenges while assisting with debugging and project development. This role deepened my understanding of programming language internals, software architecture, and systems-level software development.',
 			'icon': upLogo,
-			'link': ''
+			'link': 'https://www.up.ac.za/'
 
 		},
 		{
@@ -109,7 +158,7 @@ function Home() {
 			'date': '2026',
 			'description': 'As a Tutor and Lecturer\'s Assistant for Database Systems, I assisted students in understanding advanced database technologies, including relational and NoSQL databases, distributed data processing, and large-scale data management. I supported practical database implementation, query optimisation, and data modelling while helping students solve real-world data engineering challenges. This experience strengthened my understanding of scalable data systems, database design, and building software capable of managing large volumes of information efficiently.',
 			'icon': upLogo,
-			'link': ''
+			'link': 'https://www.up.ac.za/'
 		},
 		{
 			'position': 'Lecturer\'s Assistant - Data Structures and Algorithms',
@@ -117,7 +166,7 @@ function Home() {
 			'date': '2026',
 			'description': 'As a Tutor and Lecturer\'s Assistant for Data Structures and Algorithms, I supported students in implementing and analysing classical data structures including trees, graphs, heaps, and hash tables while exploring efficient algorithm design. I assisted with recursion, algorithm optimisation, complexity analysis, and debugging implementation challenges. This experience significantly strengthened my understanding of algorithmic thinking, performance optimisation, and designing efficient software solutions to complex computational problems.',
 			'icon': upLogo,
-			'link': ''
+			'link': 'https://www.up.ac.za/'
 		},
 		{
 			'position': 'Lecturer\'s Assistant - Programming Languages',
@@ -125,7 +174,7 @@ function Home() {
 			'date': '2026',
 			'description': 'As a Tutor and Lecturer\'s Assistant for Programming Languages, I guided students through advanced programming concepts including object-oriented programming, functional programming, polymorphism, concurrency, and language design principles. I assisted students in understanding how different programming paradigms solve problems and helped them develop the ability to evaluate and learn new languages efficiently. This role strengthened my understanding of language design, software architecture principles, and writing maintainable, adaptable software across multiple programming paradigms.',
 			'icon': upLogo,
-			'link': ''
+			'link': 'https://www.up.ac.za/'
 		},
 		{
 			'position': 'Lecturer\'s Assistant - Imperative Programming',
@@ -133,7 +182,7 @@ function Home() {
 			'date': '2024',
 			'description': 'As a Tutor and Lecturer\'s Assistant for Imperative Programming, I supported undergraduate students in developing strong programming fundamentals using procedural programming concepts. I assisted with debugging code, explaining algorithms, troubleshooting development environments, and guiding students through programming assignments and practical sessions. I also provided technical support across Linux environments, including Ubuntu, Arch, and Garuda Linux. This experience strengthened my software development foundations while developing my mentoring, communication, and technical problem-solving abilities.',
 			'icon': upLogo,
-			'link': ''
+			'link': 'https://www.up.ac.za/'
 		},
 		{
 			'position': 'Matric IT Tutor',
@@ -141,7 +190,7 @@ function Home() {
 			'date': '2023',
 			'description': 'As a self-employed Information Technology tutor, I prepared more than 20 Matric students for their final examinations by teaching programming fundamentals, problem-solving techniques, and computational thinking. I designed tailored learning plans, assessed student progress through tests and practical exercises, and adapted my teaching approach to suit individual learning styles. Through clear technical communication and structured mentoring, I helped students build confidence in programming, including improving one student\'s final mark by 13%. This role strengthened my communication, leadership, analytical thinking, and ability to explain complex technical concepts effectively.',
 			'icon': ehs,
-			'link': ''
+			'link': 'https://www.facebook.com/edenvalehighschool/'
 		},
 		{
 			'position': 'Job Shadow',
@@ -149,7 +198,7 @@ function Home() {
 			'date': '2023',
 			'description': 'During my job shadow at Software for You (SFY), I gained practical exposure to professional software development and quality assurance workflows. I participated in software and system testing, identified and documented defects through ticketing systems, and assisted in verifying resolutions alongside experienced developers. Complementing this practical experience, I completed introductory SQL and Java training, strengthening my understanding of databases and object-oriented programming. This experience provided valuable insight into software development lifecycles, collaborative development practices, and the importance of delivering reliable, high-quality software.',
 			'icon': sfy,
-			'link': ''
+			'link': 'https://www.sfy.co.za/'
 		}
 
 	];
@@ -307,7 +356,7 @@ function Home() {
 
 			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
 
-			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixExperience}>
+			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false}>
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
