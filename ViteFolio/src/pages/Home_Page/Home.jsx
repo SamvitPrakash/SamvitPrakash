@@ -9,7 +9,7 @@ import HoneycombBackground from "../../components/Honeycomb_Background/Honeycomb
 import SkillComplex from "../../components/Skill_Tree/Skill_Complex/Skill_Complex.jsx";
 import MinimalCard from '../../components/Minimal_Card/Minimal_Card.jsx';
 import Gallery from '../../components/Gallery/Gallery.jsx';
-import FeedCard from '../../components/Feed_Card/Feed_Card.jsx';
+import FeedPath from '../../components/Feed_Path/Feed_Path.jsx';
 
 // Asset Imports
 import upLogo from '../../assets/University_of_Pretoria/UP_logo.jpeg';
@@ -50,7 +50,7 @@ import sfy from '../../assets/Company_Icons/SFY.jpg';
 
 function Home() {
 
-	const visibilityMatrix = [
+	const visibilityMatrixEducation = [
 			[1,1,0,0,0,0,0,0,0,1,1],
 			[1,0,1,0,1,0,1,1,0,1,1],
 			[0,1,0,1,1,1,0,1,1,1,0],
@@ -62,7 +62,7 @@ function Home() {
 			[1,0,0,0,0,0,0,1,0,1,1]
 		];
 
-	const visibilityMatrix2 = [
+	const visibilityMatrixSkills = [
 			[1,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,1,0,0,0,0,0,0,0],
@@ -80,46 +80,79 @@ function Home() {
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
 
-	const visibilityMatrix3 = [
-		[1,1,0,0,0,0,0,0,0,1,1],
-		[1,0,1,0,1,0,1,1,0,1,1],
-		[0,1,0,1,0,1,0,1,1,1,0],
-		[0,0,0,0,1,1,1,1,1,1,0],
-		[0,0,0,1,1,1,0,1,1,1,1],
-		[0,1,0,0,1,1,1,1,1,1,0],
-		[0,1,0,1,1,1,1,1,0,1,1],
-		[1,1,1,0,1,0,1,1,1,1,0],
-		[1,0,0,0,0,0,0,1,0,1,1],
-		[1,0,0,0,0,0,0,1,0,1,1]
+	const visibilityMatrixExperience = [
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0]
 	];
 
-	const experienceFeed = {
-		"experience" : [
-			{
-				'position': 'Job Shadow',
-				'company': 'Software for You (SFY)',
-				'date': '2023',
-				'description': 'The job shadow experience at Software for You (SFY) in 2023 provided hands-on experience in software quality assurance by involving the participant in systems and software testing, ticketing of system errors, and assisting in the resolution of these errors. In addition to practical application, the individual focused on foundational skill development, evidenced by the completion of SQL courses and Java courses.',
-				'icon': sfy
-			},
-			{
-				'position': 'Matric IT Tutor',
-				'company': 'Self-Employed',
-				'date': '2023',
-				'description': 'I worked as a self-employed Information Technology (IT) tutor, specializing in preparing over 20 individual Matric students for their final exams. My tutoring focused on building foundational programming concepts and developing crucial critical thinking and problem-solving skills. A key aspect of my success was employing strong communication skills to effectively break down complex technical material into easily understandable concepts. Key responsibilities included administering and reviewing tailored tests, analyzing common errors to refine instruction, and implementing personalized strategies, which successfully helped one student increase their final marks by 13%. This role underscores my ability to provide effective, results-driven technical instruction and mentorship.',
-				'icon': ehs
-			},
-			{
-				'position': 'Tutor / Lecturer\'s Assistant',
-				'company': 'University of Pretoria',
-				'date': '2024',
-				'description': 'As a Lecturer\'s Assistant/Tutor at the University of Pretoria in 2024, I developed and applied strong problem-solving and communication skills while supporting student learning in technical subjects. Key responsibilities included assisting students with code debugging, setting up and troubleshooting various coding environments, and providing expert support in Linux Systems, specifically demonstrating proficiency with Ubuntu, Arch, and Garuda Distributions. This role highlighted my ability to mentor students effectively and resolve technical challenges in a diverse computing environment.',
-				'icon': upLogo
-			},
-			
+	const experienceFeed = [
+		{
+			'position': 'Lecturer\'s Assistant - Compiler Construction',
+			'company': 'University of Pretoria',
+			'date': '2026',
+			'description': 'As a Tutor and Lecturer\'s Assistant for Compiler Construction, I helped students understand the theory and implementation of modern compilers, including lexical analysis, parsing, semantic analysis, type checking, optimisation, and code generation. I guided students through formal language theory, finite automata, context-free grammars, and compiler implementation challenges while assisting with debugging and project development. This role deepened my understanding of programming language internals, software architecture, and systems-level software development.',
+			'icon': upLogo,
+			'link': ''
 
-		]
-	};
+		},
+		{
+			'position': 'Lecturer\'s Assistant - Database Systems',
+			'company': 'University of Pretoria',
+			'date': '2026',
+			'description': 'As a Tutor and Lecturer\'s Assistant for Database Systems, I assisted students in understanding advanced database technologies, including relational and NoSQL databases, distributed data processing, and large-scale data management. I supported practical database implementation, query optimisation, and data modelling while helping students solve real-world data engineering challenges. This experience strengthened my understanding of scalable data systems, database design, and building software capable of managing large volumes of information efficiently.',
+			'icon': upLogo,
+			'link': ''
+		},
+		{
+			'position': 'Lecturer\'s Assistant - Data Structures and Algorithms',
+			'company': 'University of Pretoria',
+			'date': '2026',
+			'description': 'As a Tutor and Lecturer\'s Assistant for Data Structures and Algorithms, I supported students in implementing and analysing classical data structures including trees, graphs, heaps, and hash tables while exploring efficient algorithm design. I assisted with recursion, algorithm optimisation, complexity analysis, and debugging implementation challenges. This experience significantly strengthened my understanding of algorithmic thinking, performance optimisation, and designing efficient software solutions to complex computational problems.',
+			'icon': upLogo,
+			'link': ''
+		},
+		{
+			'position': 'Lecturer\'s Assistant - Programming Languages',
+			'company': 'University of Pretoria',
+			'date': '2026',
+			'description': 'As a Tutor and Lecturer\'s Assistant for Programming Languages, I guided students through advanced programming concepts including object-oriented programming, functional programming, polymorphism, concurrency, and language design principles. I assisted students in understanding how different programming paradigms solve problems and helped them develop the ability to evaluate and learn new languages efficiently. This role strengthened my understanding of language design, software architecture principles, and writing maintainable, adaptable software across multiple programming paradigms.',
+			'icon': upLogo,
+			'link': ''
+		},
+		{
+			'position': 'Lecturer\'s Assistant - Imperative Programming',
+			'company': 'University of Pretoria',
+			'date': '2024',
+			'description': 'As a Tutor and Lecturer\'s Assistant for Imperative Programming, I supported undergraduate students in developing strong programming fundamentals using procedural programming concepts. I assisted with debugging code, explaining algorithms, troubleshooting development environments, and guiding students through programming assignments and practical sessions. I also provided technical support across Linux environments, including Ubuntu, Arch, and Garuda Linux. This experience strengthened my software development foundations while developing my mentoring, communication, and technical problem-solving abilities.',
+			'icon': upLogo,
+			'link': ''
+		},
+		{
+			'position': 'Matric IT Tutor',
+			'company': 'Self-Employed',
+			'date': '2023',
+			'description': 'As a self-employed Information Technology tutor, I prepared more than 20 Matric students for their final examinations by teaching programming fundamentals, problem-solving techniques, and computational thinking. I designed tailored learning plans, assessed student progress through tests and practical exercises, and adapted my teaching approach to suit individual learning styles. Through clear technical communication and structured mentoring, I helped students build confidence in programming, including improving one student\'s final mark by 13%. This role strengthened my communication, leadership, analytical thinking, and ability to explain complex technical concepts effectively.',
+			'icon': ehs,
+			'link': ''
+		},
+		{
+			'position': 'Job Shadow',
+			'company': 'Software for You (SFY)',
+			'date': '2023',
+			'description': 'During my job shadow at Software for You (SFY), I gained practical exposure to professional software development and quality assurance workflows. I participated in software and system testing, identified and documented defects through ticketing systems, and assisted in verifying resolutions alongside experienced developers. Complementing this practical experience, I completed introductory SQL and Java training, strengthening my understanding of databases and object-oriented programming. This experience provided valuable insight into software development lifecycles, collaborative development practices, and the importance of delivering reliable, high-quality software.',
+			'icon': sfy,
+			'link': ''
+		}
+
+	];
 
 	const nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
@@ -195,16 +228,44 @@ function Home() {
 				<p className="bio">I am a final-year <em>BSc Computer Science</em> student at the <em>University of Pretoria</em>. As a passionate <em>back-end developer</em>, I have a strong interest in <em>software engineering</em> and a deep love for <em>problem-solving</em>. I truly enjoy the challenge of <em>designing</em> and <em>building</em> elegant and efficient solutions. My enthusiasm for technology extends beyond the code, as I also enjoy <em>discovering</em> and <em>experimenting</em> with new <em>Linux</em> distributions. I am currently using <em>Arch Linux</em> and has finnished exploring <em>Ubuntu</em> and various <em>Garuda</em> distributions. I am also deeply interested in learning about <em>cyber security</em> and enjoy the intricacies of <em>low-level programming</em>, including <em>Assembly</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em> and a <em>lifelong learner</em>, driven by the desire to <em>build new things</em> and continually expand my knowledge in the ever-evolving tech landscape.</p>
 			</div>
 
-			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrix}>
+			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation}>
 				<h2 className="education-title"><span className="name">Educational</span> Background.</h2>
 				<div className="education-cards">
-					<EducationCard icon={ehs} institution="Edenvale High School" degree="Bachelor Certificate" startYear="2018" endYear="2022" description="Completed my high school education with a focus on physics, mathematics and Information Technology and achieved a distinction in Information Technology." degreeLink="https://www.facebook.com/edenvalehighschool/" />
-					<EducationCard icon={upLogo} institution="University of Pretoria" degree="BSc Computer Science" startYear="2023" endYear="2025" description="I am currently in my final year of study. I am passionate about developing innovative solutions to complex problems and look forward to applying my skills in a professional environment." degreeLink="https://www.up.ac.za/" />
+					<EducationCard 
+						icon={ehs} 
+						institution="Edenvale High School" 
+						degree="Bachelor Certificate" 
+						startYear="2018" 
+						endYear="2022" 
+						description="Completed my high school education with a focus on physics, mathematics and Information Technology and achieved a distinction in Information Technology." 
+						degreeLink="https://www.facebook.com/edenvalehighschool/" 
+					/>
+
+					<EducationCard 
+						icon={upLogo} 
+						institution="University of Pretoria" 
+						degree="BSc Computer Science" 
+						startYear="2023" 
+						endYear="2025" 
+						description="Graduated with distinction in Software Engineering, gaining a strong foundation in software design, development, testing, and engineering principles." 
+						degreeLink="https://www.up.ac.za/" 
+					/>
+
+					<EducationCard 
+						icon={upLogo} 
+						institution="University of Pretoria" 
+						degree="BSc Hons Computer Science" 
+						startYear="2026" 
+						endYear="2026" 
+						description="Currently pursuing a BSc Honours in Computer Science, with a specialisation in cybersecurity. My research focuses on telecommunications security and integrity in modern communication networks." 
+						degreeLink="https://www.up.ac.za/" 
+					/>
+					
 				</div>
 				<h2 className="technical-skills-title"><span className="name">Technical</span> Skills.</h2>
 			</HoneycombBackground>
 
-			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrix2} animate={false}>
+			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrixSkills} animate={false}>
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 
@@ -244,7 +305,11 @@ function Home() {
 				<MinimalCard icon={phpMyAdmin} name="phpMyAdmin" subtitle={"Database Management System"} />	
 			</Gallery>
 
-			{/* <h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2> */}
+			<h2 className='work-experience-title'>Work <span className='name'>Experience</span>.</h2>
+
+			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixExperience}>
+				<FeedPath experience={experienceFeed} />
+			</HoneycombBackground>
 
 		</>
 	);

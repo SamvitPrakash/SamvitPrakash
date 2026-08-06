@@ -1,0 +1,59 @@
+.feed-card{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--current-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
+    max-width: 50rem;
+    /* height: 24rem; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--current-primary);
+}
+
+/* .feed-card:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+} */
+
+.feed-header {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0.7rem;
+}
+
+.feed-institution{
+    color: var(--current-secondary);
+    margin: 0.2rem;
+}
+
+.feed-header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feed-logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.feed-body p {
+    color: var(--opposite-text);
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.feed-body h5{
+    color: var(--current-secondary);
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}

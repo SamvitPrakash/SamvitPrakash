@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@swc/core": "^1.13.5",
+    "approve": "^0.0.12",
+    "esbuild": "^0.25.9",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.9.0"
+    "react-router-dom": "^7.9.0",
+    "scripts": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -28,5 +32,9 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "vite": "^7.1.2"
+  },
+  "allowScripts": {
+    "@swc/core@1.13.5": true,
+    "esbuild@0.28.1": true
   }
 }

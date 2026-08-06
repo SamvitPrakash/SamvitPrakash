@@ -23,14 +23,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
 
 .technical-skills-title{
     margin-top: 15rem;
+    margin-left: 19rem;
     text-align: left;
+    align-self: flex-start;
 }
 
 .skill-tree-description{

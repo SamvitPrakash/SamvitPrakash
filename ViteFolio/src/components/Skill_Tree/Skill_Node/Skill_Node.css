@@ -69,6 +69,7 @@
     color: var(--current-background);
     text-wrap: pretty;
     margin: 0rem;
+    font-weight: 350;
 }
 
 .skill-node:hover + .skill-modal,
