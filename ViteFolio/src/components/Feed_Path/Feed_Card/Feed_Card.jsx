@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Feed_Card.css";
-import { FaRegCalendarAlt, FaLocationArrow, FaLock } from "react-icons/fa";
+import { FaRegCalendarAlt, FaMapMarkerAlt, FaLocationArrow } from "react-icons/fa";
 
 function FeedCard({ icon, institution, position, year, description, link, expanded = false }) {
     const [showCursor, setShowCursor] = useState(true);
@@ -17,7 +17,7 @@ function FeedCard({ icon, institution, position, year, description, link, expand
         <div className="feed-card-container">
             <div className={`node-wrapper ${expanded ? "hide-node" : "show-node"}`}>
                 <div className="skill-node lock-container">
-                    <FaLock className="lock-icon" />
+                    <FaMapMarkerAlt className="lock-icon" />
                     {/* <img className='skill-icon' src={icon} /> */}
                 </div>
             </div>
