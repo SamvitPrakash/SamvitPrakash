@@ -52,6 +52,13 @@
     padding-right: 15rem;
 }
 
+.conclusion-description {
+    margin-top: 10rem;
+    color: var(--current-text);
+    text-wrap: pretty;
+    text-align: center;
+}
+
 em{
     text-decoration: none;
     font-style: normal;

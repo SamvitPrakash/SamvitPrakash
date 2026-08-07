@@ -3,9 +3,9 @@ import FeedCard from "./Feed_Card/Feed_Card.jsx";
 import { useEffect, useRef, useState } from "react";
 
 const defaultPath = `
-M 70 0
+M 65 0
 
-C 70 35 22 35 22 70
+C 65 35 22 35 22 70
 
 C 22 105 78 105 78 140
 
@@ -31,6 +31,8 @@ function FeedPath({ experience, path = defaultPath }) {
 
     const [progress, setProgress] = useState(0);
     const [length, setLength] = useState(0);
+    const [pointX, setPointX] = useState(0);
+    const [pointY, setPointY] = useState(0);
     const [expandedCards, setExpandedCards] = useState([]);
 
     useEffect(() => {
@@ -97,6 +99,8 @@ function FeedPath({ experience, path = defaultPath }) {
             });
 
             setExpandedCards(expanded);
+            setPointX(pointX);
+            setPointY(pointY);
         }
 
         handleScroll();
@@ -137,13 +141,6 @@ function FeedPath({ experience, path = defaultPath }) {
                     strokeDashoffset={
                         length * (1 - progress)
                     }
-                />
-
-                <path
-                    d={path}
-                    fill="none"
-                    stroke="var(--current-text)"
-                    strokeWidth={0}
                 />
             </svg>
 
