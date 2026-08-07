@@ -1,0 +1,64 @@
+.navigation{
+    background-color: var(--current-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    /* border-bottom: 1px solid var(--current-text); */
+    margin-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+}
+
+.navigation h4{
+    color: var(--current-primary);
+    height: fit-content;
+    margin: 0rem;
+    padding: 0rem;
+    
+}
+
+.nav-links{
+    color: var(--current-text);
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.nav-links a{
+    color: var(--current-text);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 2.5s ease;
+    transition: font-size 2.5s ease-in;
+}
+
+.nav-links a:hover{
+    cursor: pointer;
+    color: var(--current-accent);
+    /* font-weight: 700; */
+    transition: color 1s ease;
+    transition: font-size 10s ease;
+    text-decoration: underline var(--current-accent);
+}
+
+.nav-links #contact{
+    border: 2px solid var(--current-primary);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+}
+
+.nav-links #contact:hover{
+    background-color: var(--current-primary);
+    color: var(--current-background);
+    font-weight: 700;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    text-decoration: none;
+}

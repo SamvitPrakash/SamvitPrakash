@@ -1,0 +1,86 @@
+.education-card{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--current-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
+    max-width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--current-primary);
+}
+
+.education-card:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.education-header {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0.7rem;
+}
+
+.education-institution{
+    color: var(--current-secondary);
+    margin: 0.2rem;
+}
+
+.education-header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.education-body p {
+    color: var(--opposite-text);
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.education-body h5{
+    color: var(--current-secondary);
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-degree-button {
+    background-color: var(--current-accent);
+    color: var(--current-background);
+    border: none;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 
+        background-color 0.3s cubic-bezier(.25,.8,.25,1),
+        transform 0.2s cubic-bezier(.25,.8,.25,1),
+        box-shadow 0.2s cubic-bezier(.25,.8,.25,1);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;            
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.view-degree-button:hover {
+    background-color: var(--current-secondary);
+    color: var(--current-accent);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,0,0,0.12);
+}

@@ -1,0 +1,79 @@
+.skill-node {
+    background-color: var(--current-text);
+    width: 70px;
+    height: 75px;
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    clip-path: polygon(
+        50% 0%,    
+        100% 25%,  
+        100% 75%,  
+        50% 100%,  
+        0% 75%,    
+        0% 25%
+    );
+    transition: 
+        box-shadow 0.3s cubic-bezier(.4,0,.2,1),
+        transform 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+.skill-node:hover {
+    box-shadow: 0 0 32px 8px var(--current-accent, #ff0);
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 45px;
+    animation: spin-hover 2.5s linear infinite;
+    animation-play-state: paused;
+}
+
+.skill-modal{
+    background-color: var(--current-text);
+    white-space: nowrap;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    position: absolute;  
+    left: 50%;           
+    top: 100%;           
+    transform: translateX(-50%);
+    margin-top: 1.5rem;  
+    z-index: 10;         
+    border-radius: 0.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.skill-modal::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid var(--current-text);
+}
+
+.skill-modal h5{
+    color: var(--current-background);
+    text-wrap: pretty;
+    margin: 0rem;
+    font-weight: 350;
+}
+
+.skill-node:hover + .skill-modal,
+.skill-node:focus + .skill-modal {
+    opacity: 1;
+    pointer-events: auto;
+}

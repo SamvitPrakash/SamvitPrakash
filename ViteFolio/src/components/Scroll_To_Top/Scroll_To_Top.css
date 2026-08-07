@@ -1,0 +1,16 @@
+.scroll-to-top-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.scroll-to-top-button {
+    border: none;
+}
+
+.scroll-to-top-icon {
+    font-size: 2rem;
+    color: var(--current-secondary);
+    transition: transform 0.3s ease;
+}

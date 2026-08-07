@@ -1,0 +1,109 @@
+.feed-card-container {
+    position: relative;
+    width: fit-content;
+}
+
+.node-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition:
+        opacity .35s ease,
+        transform .45s ease;
+
+    transform-origin: center;
+}
+
+.show-node {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.hide-node {
+    opacity: 0;
+    transform: scale(.35) rotate(-90deg);
+    pointer-events: none;
+}
+
+.lock-container {
+    position: absolute;
+}
+
+.feed-card {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--current-primary);
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.2),
+        0 1.5px 4px rgba(0,0,0,.15);
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--current-primary);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+}
+
+.show-card {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hide-card {
+    opacity: 0;
+    transform: scale(.85);
+    pointer-events: none;
+}
+
+.lock-icon {
+    color: var(--current-secondary);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.feed-header {
+    display: flex;
+    align-items: flex-start;
+    padding-left: .7rem;
+}
+
+.feed-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feed-institution {
+    color: var(--current-secondary);
+    margin: .2rem;
+}
+
+.feed-logo {
+    width: 50px;
+    height: 50px;
+
+    background: white;
+    border-radius: 50%;
+    object-fit: contain;
+
+    margin-top: .8rem;
+    margin-right: 1rem;
+}
+
+.feed-body h5 {
+    color: var(--current-secondary);
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: .5rem;
+}
+
+.feed-body p {
+    color: var(--opposite-text);
+    text-align: left;
+    margin-top: 1rem;
+}
