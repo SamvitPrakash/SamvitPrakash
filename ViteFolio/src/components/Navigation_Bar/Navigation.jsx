@@ -46,7 +46,7 @@ const Navigation = () => {
 			<h4 className="logo">My Portfolio</h4>
 			<div className='nav-links'>
 				<a href="/">Home</a>
-				<a href="#projects">Projects</a>
+				<a href="/projects">Projects</a>
 				<a href="#about">What's New</a>
 				<a href="#contact">Contact Me</a>
 				<ThemeButton isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
