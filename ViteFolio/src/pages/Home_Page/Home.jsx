@@ -1,5 +1,6 @@
 // React and CSS Imports
 import './Home.css'
+import { useState, useEffect } from 'react';
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
@@ -61,7 +62,6 @@ function Home() {
 			[1,1,1,0,1,0,1,1,1,1,0],
 			[1,0,0,0,0,0,0,1,0,1,1]
 		];
-
 	const visibilityMatrixSkills = [
 			[1,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0,0,0,0,0],
@@ -79,7 +79,6 @@ function Home() {
 			[1,1,0,1,1,0,0,0,0,1,1],
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
-
 	const visibilityMatrixExperience = [
 		[1,1,0,0,0,0,0,0,0,0,1],  
 		[1,0,0,0,0,0,0,0,1,1,1],  
@@ -141,7 +140,6 @@ function Home() {
 		[0,0,0,0,0,0,0,0,0,0,1],  
 		[0,0,0,0,0,0,0,0,0,1,1]   
 	];
-
 	const experienceFeed = [
 		{
 			'position': 'Lecturer\'s Assistant - Compiler Construction',
@@ -202,11 +200,10 @@ function Home() {
 		}
 
 	];
-
 	const nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
 		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
-		{ id: 3, icon: django, name: "Django", x: 1250, y: 250 },
+		{ id: 3, icon: django, name: "Django", x: 1150, y: 250 },
 		{ id: 4, icon: javascript, name: "JavaScript", x: 400, y: 290 },
 		{ id: 5, icon: typescript, name: "TypeScript", x: 850, y: 400 },
 		{ id: 6, icon: nodejs, name: "Node.js", x: 1200, y: 570 },
@@ -228,7 +225,6 @@ function Home() {
 		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
 		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
 	];
-
 	const edges = [
 		{ from: 1, to: 2 },
 		{ from: 2, to: 3 },
@@ -320,7 +316,7 @@ function Home() {
 
 			<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
 			
-			<Gallery interval={1500} gap={0}>
+			<Gallery interval={1500} gap={0} >
 				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
 				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
 				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />

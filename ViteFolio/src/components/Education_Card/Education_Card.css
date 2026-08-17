@@ -4,8 +4,10 @@
     border-radius: 10px;
     background-color: var(--current-primary);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
-    max-width: 25rem;
-    height: 24rem;
+    /* max-width: 25rem;
+    height: 24rem; */
+    max-width: clamp(18rem, 27vw, 25rem);
+    height: clamp(22rem, 27vw, 24rem);
     display: flex;
     flex-direction: column;
     border: 1px solid var(--current-primary);
@@ -13,7 +15,7 @@
 
 .education-card:hover {
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0,0,0,0.2);
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     transition: all 0.3s ease;
 }
 
@@ -26,6 +28,7 @@
 .education-institution{
     color: var(--current-secondary);
     margin: 0.2rem;
+    text-align: start;
 }
 
 .education-header-text{
@@ -54,7 +57,7 @@
 .education-body h5{
     color: var(--current-secondary);
     text-align: left;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     margin-bottom: 0.5rem;
 }
 
