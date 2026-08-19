@@ -1,6 +1,170 @@
 @import url('https://fonts.googleapis.com/css?family=Commissioner:700|Commissioner:400');
 
+/* BLACK & RED */
+/* :root {
+	--light-text: #210c0c;
+	--light-background: #fff1f1;
+	--light-primary: #a52d2d;
+	--light-secondary: #e59a9a;
+	--light-accent: #d83c3c;
+
+	--dark-text: #ffe7e7;
+	--dark-background: #140707;
+	--dark-primary: #e68c8c;
+	--dark-secondary: #7c2424;
+	--dark-accent: #f04444;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+
+/* MIDIGHT BLUE */
+/* :root {
+	--light-text: #0b1428;
+	--light-background: #edf3ff;
+	--light-primary: #315ba8;
+	--light-secondary: #9db8eb;
+	--light-accent: #4879d8;
+
+	--dark-text: #e5edff;
+	--dark-background: #080d1a;
+	--dark-primary: #8daeea;
+	--dark-secondary: #304d8a;
+	--dark-accent: #5d8ff0;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+/* GREY */
+/* :root {
+	--light-text: #17191c;
+	--light-background: #f1f3f5;
+	--light-primary: #454b52;
+	--light-secondary: #aeb5bc;
+	--light-accent: #69737d;
+
+	--dark-text: #e9ecef;
+	--dark-background: #101214;
+	--dark-primary: #b9c1c8;
+	--dark-secondary: #464d54;
+	--dark-accent: #89949e;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+/* RED */
+/* :root {
+	--light-text: #291015;
+	--light-background: #faf0f2;
+	--light-primary: #7d293d;
+	--light-secondary: #d9a1ae;
+	--light-accent: #b83d5a;
+
+	--dark-text: #f7e5e9;
+	--dark-background: #18090e;
+	--dark-primary: #dc8fa1;
+	--dark-secondary: #702638;
+	--dark-accent: #d94c6b;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+/* CYAN */
+/* :root {
+	--light-text: #071d21;
+	--light-background: #e9f8f9;
+	--light-primary: #087f8c;
+	--light-secondary: #8ed9df;
+	--light-accent: #13b8c7;
+
+	--dark-text: #ddf8fa;
+	--dark-background: #061417;
+	--dark-primary: #73d3dc;
+	--dark-secondary: #176873;
+	--dark-accent: #20d6e5;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+/* PURPLE */
+/* :root {
+	--light-text: #1c1028;
+	--light-background: #f5effb;
+	--light-primary: #713f91;
+	--light-secondary: #c7a4dc;
+	--light-accent: #9b4dcc;
+
+	--dark-text: #f1e7f7;
+	--dark-background: #130b19;
+	--dark-primary: #c69bdd;
+	--dark-secondary: #63377e;
+	--dark-accent: #b85be6;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+} */
+
+/* BLUE */
 :root {
+	--light-text: #0b1f2a;
+	--light-background: #eaf7fb;
+	--light-primary: #176b87;
+	--light-secondary: #8fd3e8;
+	--light-accent: #25a9d6;
+
+	--dark-text: #dff5fa;
+	--dark-background: #07151b;
+	--dark-primary: #7bcce3;
+	--dark-secondary: #185d73;
+	--dark-accent: #39c6ed;
+
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
+
+	--opposite-text: var(--dark-text);
+}
+
+
+/* GREEN */
+/* :root {
 	--light-text: #12200e;
 	--light-background: #ecf7e9;
 	--light-primary: #326321;
@@ -20,7 +184,7 @@
 	--current-accent: var(--light-accent);
 
 	--opposite-text: var(--dark-text);
-}
+} */
 
 body {
 	background-color: var(--current-background);

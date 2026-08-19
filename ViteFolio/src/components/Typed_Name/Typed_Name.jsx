@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
 
-function TypedName() {
+function TypedName({fullText = "Hey, I'm", fullName = " Samvit Prakash", punctuation=".", id="typed-name"}) {
     const [text, setText] = useState('');
     const [name, setName] = useState('');
     const [punctuated, setPunctuated] = useState('');
     const [cursorVisible, setCursorVisible] = useState(true);
 
     useEffect(() => {
-        const fullText = "Hey, I'm";
-        const fullName = " Samvit Prakash";
         let currentIndex = 0;
         let nameIndex = 0;
 
@@ -27,7 +25,7 @@ function TypedName() {
                 nameIndex++;
             } else {
                 clearInterval(interval);
-                setPunctuated('.');
+                setPunctuated(punctuation);
             }
         }, 100);
 
@@ -38,7 +36,7 @@ function TypedName() {
     }, []);
 
     return (
-        <h1 className='title'>
+        <h1 className='title' id={id}>
             {text}
             <span className="name">{name}</span>
             {punctuated}

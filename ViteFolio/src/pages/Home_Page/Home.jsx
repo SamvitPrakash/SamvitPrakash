@@ -1,6 +1,7 @@
 // React and CSS Imports
 import './Home.css'
 import { useState, useEffect } from 'react';
+import { motion } from 'motion/react'
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
@@ -269,13 +270,37 @@ function Home() {
 			<Navigation />
 
 			<div>
-				<TypedName/>
-				<p className="bio" id='bio'>I am a final-year <em>BSc Computer Science</em> student at the <em>University of Pretoria</em>. As a passionate <em>back-end developer</em>, I have a strong interest in <em>software engineering</em> and a deep love for <em>problem-solving</em>. I truly enjoy the challenge of <em>designing</em> and <em>building</em> elegant and efficient solutions. My enthusiasm for technology extends beyond the code, as I also enjoy <em>discovering</em> and <em>experimenting</em> with new <em>Linux</em> distributions. I am currently using <em>Arch Linux</em> and has finnished exploring <em>Ubuntu</em> and various <em>Garuda</em> distributions. I am also deeply interested in learning about <em>cyber security</em> and enjoy the intricacies of <em>low-level programming</em>, including <em>Assembly</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em> and a <em>lifelong learner</em>, driven by the desire to <em>build new things</em> and continually expand my knowledge in the ever-evolving tech landscape.</p>
+				<TypedName id='bio'/>
+				
+				<motion.div
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ 
+						duration: 1.5,
+						type: 'spring',
+						stiffness: 80,
+						damping: 20,
+					}}
+				>
+					<p className="bio">I am a final-year <em>BSc Computer Science</em> student at the <em>University of Pretoria</em>. As a passionate <em>back-end developer</em>, I have a strong interest in <em>software engineering</em> and a deep love for <em>problem-solving</em>. I truly enjoy the challenge of <em>designing</em> and <em>building</em> elegant and efficient solutions. My enthusiasm for technology extends beyond the code, as I also enjoy <em>discovering</em> and <em>experimenting</em> with new <em>Linux</em> distributions. I am currently using <em>Arch Linux</em> and has finnished exploring <em>Ubuntu</em> and various <em>Garuda</em> distributions. I am also deeply interested in learning about <em>cyber security</em> and enjoy the intricacies of <em>low-level programming</em>, including <em>Assembly</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em> and a <em>lifelong learner</em>, driven by the desire to <em>build new things</em> and continually expand my knowledge in the ever-evolving tech landscape.</p>
+				</motion.div>
+			
 			</div>
 
 			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation}>
 				<h2 className="education-title" id='education'><span className="name">Educational</span> Background.</h2>
-				<div className="education-cards">
+				
+				<motion.div 
+					className="education-cards"
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ 
+						duration: 0.8, 
+						type: 'spring',
+						stiffness: 80,
+						damping: 20,
+					}}
+				>
 					<EducationCard 
 						icon={ehs} 
 						institution="Edenvale High School" 
@@ -306,7 +331,7 @@ function Home() {
 						degreeLink="https://www.up.ac.za/" 
 					/>
 					
-				</div>
+				</motion.div>
 				<h2 className="technical-skills-title" id='skills'><span className="name">Technical</span> Skills.</h2>
 			</HoneycombBackground>
 
