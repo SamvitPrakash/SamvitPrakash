@@ -75,3 +75,21 @@ h2{
     color: var(--current-text);
 
 }
+
+@media (max-width: 650px) {
+    .education-title{
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .technical-skills-title{
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .work-experience-title{
+        margin-left: 0rem;
+        text-align: center;
+        padding-right: 0rem;
+    }
+}

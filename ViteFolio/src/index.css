@@ -1,55 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Commissioner:700|Commissioner:400');
 
 :root {
-  --light-text: #12200e;
-  --light-background: #ecf7e9;
-  --light-primary: #326321;
-  --light-secondary: #9edc89;
-  --light-accent: #4aa62b;
+	--light-text: #12200e;
+	--light-background: #ecf7e9;
+	--light-primary: #326321;
+	--light-secondary: #9edc89;
+	--light-accent: #4aa62b;
 
-  --dark-text: #e4f2e0;
-  --dark-background: #0b1508;
-  --dark-primary: #acde9b;
-  --dark-secondary: #387623;
-  --dark-accent: #78d459;
+	--dark-text: #e4f2e0;
+	--dark-background: #0b1508;
+	--dark-primary: #acde9b;
+	--dark-secondary: #387623;
+	--dark-accent: #78d459;
 
-  --current-text: var(--light-text);
-  --current-background: var(--light-background);
-  --current-primary: var(--light-primary);
-  --current-secondary: var(--light-secondary);
-  --current-accent: var(--light-accent);
+	--current-text: var(--light-text);
+	--current-background: var(--light-background);
+	--current-primary: var(--light-primary);
+	--current-secondary: var(--light-secondary);
+	--current-accent: var(--light-accent);
 
-  --opposite-text: var(--dark-text);
-
-  background-color: var(--current-background);
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 0rem;
-  text-align: center;
+	--opposite-text: var(--dark-text);
 }
 
 body {
-  font-family: 'Commissioner';
-  font-weight: 400;
+	background-color: var(--current-background);
+	text-align: center;
+	font-family: 'Commissioner';
+	font-weight: 400;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Commissioner';
-  font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Commissioner';
+	font-weight: 700;
 }
 
-html {font-size: 100%;} /* 16px */
+html {
+	font-size: 100%;
+	/* 16px */
+}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+h1 {
+	/* font-size: 4.210rem; */
+	font-size: clamp(2.5rem, 5vw, 4.210rem);
+	/* 67.36px */
+}
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+h2 {
+	/* font-size: 3.158rem; */
+	font-size: clamp(2rem, 4vw, 3.158rem);
+	/* 50.56px */
+}
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+h3 {
+	/* font-size: 2.369rem; */
+	font-size: clamp(1.75rem, 3vw, 2.369rem);
+	/* 37.92px */
+}
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+h4 {
+	/* font-size: 1.777rem; */
+	font-size: clamp(1.4rem, 2.2vw, 1.777rem);
+	/* 28.48px */
+}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+h5 {
+	/* font-size: 1.333rem; */
+	font-size: clamp(1.2rem, 1.5vw, 1.333rem);
+	/* 21.28px */
+}
 
-small {font-size: 0.750rem; /* 12px */}
+small {
+	font-size: 0.750rem;
+	/* 12px */
+}
 
-p {font-size: 1.2rem;}
+p {
+	/* font-size: 1.2rem; */
+	font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
