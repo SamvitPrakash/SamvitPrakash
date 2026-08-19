@@ -22,6 +22,10 @@
     width: 100%;
 }
 
+.honeycomb-content > * {
+    width: 100%;
+}
+
 .honeycomb-row{
     display: flex;
     flex-direction: row;

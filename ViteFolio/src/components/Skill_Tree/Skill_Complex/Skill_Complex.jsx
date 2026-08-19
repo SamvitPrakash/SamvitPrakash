@@ -80,7 +80,7 @@ function SkillComplex({ nodes, edges }) {
 					style={{ left: node.x, top: node.y }}
 				>
 					<motion.div
-						initial={{ opacity: 0, x: node.id % 2 === 0 ? 100 : -100 }}
+						initial={{ opacity: 0, x: node.id % 2 === 1 ? 100 : -100 }}
 						whileInView={{ opacity: 1, x: 0, y: 0 }}
 						transition={{ 
 							duration: 1.5, 

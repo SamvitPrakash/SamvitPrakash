@@ -93,8 +93,8 @@ function Home() {
 		[1,0,0,0,0,0,0,0,0,1,0],  
 		[1,1,0,0,0,0,0,0,0,0,1],  
 		[0,1,0,0,0,0,0,0,0,0,0], 
-		[1,1,0,0,0,0,0,0,0,0,0],  
-		[0,0,1,0,0,0,0,0,0,0,0],  
+		[1,1,0,1,0,0,0,0,0,0,0],  
+		[0,0,0,0,0,0,0,0,0,0,0],  
 		[0,0,0,0,0,0,0,0,0,0,0], 
 		[1,0,0,0,0,0,0,0,0,0,0],  
 		[1,0,0,0,0,0,0,0,0,0,0],  
@@ -287,7 +287,7 @@ function Home() {
 			
 			</div>
 
-			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation}>
+			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation} parrallax={true}>
 				<h2 className="education-title" id='education'><span className="name">Educational</span> Background.</h2>
 				
 				<motion.div 
@@ -339,7 +339,18 @@ function Home() {
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 
-			<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
+			<motion.div
+				initial={{ opacity: 0, y: 100 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ 
+					duration: 1.5,
+					type: 'spring',
+					stiffness: 80,
+					damping: 20,
+				}}
+			>
+				<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
+			</motion.div>
 			
 			<Gallery interval={1500} gap={0} >
 				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
@@ -377,12 +388,12 @@ function Home() {
 
 			<h2 className='work-experience-title' id='work'>Work <span className='name'>Experience</span>/<span className='name'>Journey</span></h2>
 
-			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false}>
+			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false} parrallax={true}>
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
 			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <em>projects</em> & <em>about</em>!</p>
-
+			
 			<ScrollToTopButton />
 
 			<Footer />

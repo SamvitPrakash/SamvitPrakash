@@ -1,0 +1,55 @@
+.project-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin-bottom: 5rem;
+    z-index: 1;
+}
+
+.project-bio {
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+}
+
+.project-bio em{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+
+.aurora-project-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    /* padding: 2rem; */
+    /* box-sizing: border-box; */
+
+}
+
+.project-bio-aurora {
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+    text-wrap: pretty;
+    width: 45%;
+
+}
+
+.project-title-direwolf {
+    color: var(--dark-text);
+}
+
+.project-title-aurora {
+    color: var(--light-accent);
+}
+
+.project-title-greencart {
+    color: var(--light-text);
+}
