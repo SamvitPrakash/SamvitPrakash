@@ -79,10 +79,20 @@ export function Projects() {
         <>
             <Navigation />
             
-            <div>
-				<TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
-                <p className="bio">I am a final-year <em>BSc Computer Science</em> student at the <em>University of Pretoria</em>. As a passionate <em>back-end developer</em>, I have a strong interest in <em>software engineering</em> and a deep love for <em>problem-solving</em>. I truly enjoy the challenge of <em>designing</em> and <em>building</em> elegant and efficient solutions. My enthusiasm for technology extends beyond the code, as I also enjoy <em>discovering</em> and <em>experimenting</em> with new <em>Linux</em> distributions. I am currently using <em>Arch Linux</em> and has finnished exploring <em>Ubuntu</em> and various <em>Garuda</em> distributions. I am also deeply interested in learning about <em>cyber security</em> and enjoy the intricacies of <em>low-level programming</em>, including <em>Assembly</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em> and a <em>lifelong learner</em>, driven by the desire to <em>build new things</em> and continually expand my knowledge in the ever-evolving tech landscape.</p>
-			</div>
+            
+            <TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                    duration: 1.5,
+                    type: 'spring',
+                    stiffness: 80,
+                    damping: 20,
+                }}
+            >
+                <p className="bio">A <em>selection</em> of <em>projects</em> that represent the <em>work</em> I'm most <em>proud</em> of, highlighting my <em>interests</em>, <em>skills</em>, and <em>approach</em> to <em>software development</em>. Each project explores a <em>different idea</em>, <em>technology</em>, or <em>challenge</em>, offering a <em>glimpse</em> into how I <em>build</em> and <em>experiment</em> with software.</p>
+            </motion.div>
             
             <HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixProjects} animate={false} parrallax={true}>
                 <motion.div
@@ -124,7 +134,7 @@ export function Projects() {
                 >
                     <ScrollExpand 
                         src={auroraCover} 
-                        title='' 
+                        title='Aurora' 
                         poster={direwolfCover}
                         alt='Aurora project cover' 
                         mediaType='video'
