@@ -1,6 +1,6 @@
 .dark-mode {
     background-color: var(--light-background);
-    background-image: url('../../assets/Theme_Button/light_mode.svg');
+    background-image: url('../../../assets/Theme_Button/light_mode.svg');
     color: var(--light-text);
 }
 
@@ -10,7 +10,7 @@
 
 .light-mode {
     background-color: var(--dark-background);
-    background-image: url('../../assets/Theme_Button/dark_mode.svg');
+    background-image: url('../../../assets/Theme_Button/dark_mode.svg');
     color: var(--dark-text);
 }
 
