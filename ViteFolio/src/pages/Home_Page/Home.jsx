@@ -392,8 +392,8 @@ function Home() {
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
-			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <em>projects</em> & <em>about</em>!</p>
-			
+			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <a href='/projects'>projects</a> & <a href='/about'>about</a> pages!</p>
+
 			<ScrollToTopButton />
 
 			<Footer />

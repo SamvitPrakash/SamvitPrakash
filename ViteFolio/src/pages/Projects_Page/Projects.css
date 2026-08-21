@@ -7,6 +7,13 @@
     z-index: 1;
 }
 
+.project-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .project-bio {
     margin-bottom: 1rem;
     text-wrap: pretty;
@@ -25,8 +32,7 @@
 }
 
 .project-content {
-    background-color: var(--dark-primary);
-    opacity: 0.90;
+    background-color: rgba(var(--dark-primary-rgb), 0.9);
     border-radius: 22px;
     width: 65%;
     padding: 1rem;
@@ -60,4 +66,18 @@
 
 .project-title-greencart {
     color: var(--light-text);
+}
+
+.secondary-project-title {
+    text-align: right;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+}
+
+.upcomming-projects-title {
+    text-align: left;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
 }

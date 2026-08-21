@@ -59,6 +59,20 @@
     text-align: center;
 }
 
+.conclusion-description a{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--current-primary);
+    font-weight: 700;
+}
+
+.conclusion-description a:hover{
+    text-decoration: underline;
+    font-style: normal;
+    color: var(--current-primary);
+    font-weight: 700;
+}
+
 em{
     text-decoration: none;
     font-style: normal;

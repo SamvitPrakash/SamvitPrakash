@@ -142,22 +142,37 @@
 /* BLUE */
 :root {
 	--light-text: #0b1f2a;
+	--light-text-rgb: 11, 31, 42;
 	--light-background: #eaf7fb;
+	--light-background-rgb: 234, 247, 251;
 	--light-primary: #176b87;
+	--light-primary-rgb: 23, 107, 135;
 	--light-secondary: #8fd3e8;
+	--light-secondary-rgb: 143, 211, 232;
 	--light-accent: #25a9d6;
+	--light-accent-rgb: 37, 169, 214;
 
 	--dark-text: #dff5fa;
+	--dark-text-rgb: 223, 245, 250;
 	--dark-background: #07151b;
+	--dark-background-rgb: 7, 21, 27;
 	--dark-primary: #7bcce3;
+	--dark-primary-rgb: 123, 204, 227;
 	--dark-secondary: #185d73;
+	--dark-secondary-rgb: 24, 93, 115;
 	--dark-accent: #39c6ed;
+	--dark-accent-rgb: 57, 198, 237;
 
 	--current-text: var(--light-text);
+	--current-text-rgb: var(--light-text-rgb);
 	--current-background: var(--light-background);
+	--current-background-rgb: var(--light-background-rgb);
 	--current-primary: var(--light-primary);
+	--current-primary-rgb: var(--light-primary-rgb);
 	--current-secondary: var(--light-secondary);
+	--current-secondary-rgb: var(--light-secondary-rgb);
 	--current-accent: var(--light-accent);
+	--current-accent-rgb: var(--light-accent-rgb);
 
 	--opposite-text: var(--dark-text);
 }
