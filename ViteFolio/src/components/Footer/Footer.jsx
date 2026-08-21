@@ -9,18 +9,17 @@ export function Footer() {
             <div className="footer-columns">
                 <div className="footer-column">
                     <h5 className="footer-column-title">Home</h5>
-                    <a href="#bio">Bio</a>
-                    <a href="#education">Educational Background</a>
-                    <a href="#skills">Technical Skills</a>
-                    <a href="#work">Work Experience</a>
+                    <a href="/#bio">Bio</a>
+                    <a href="/#education">Educational Background</a>
+                    <a href="/#skills">Technical Skills</a>
+                    <a href="/#work">Work Experience</a>
                 </div>
 
                 <div className="footer-column">
                     <h5 className="footer-column-title">Projects</h5>
-                    <a href="#projects">Project 1</a>
-                    <a href="#projects">Project 2</a>
-                    <a href="#projects">Project 3</a>
-                    <a href="#projects">Project 4</a>
+                    <a href="#projects">Direwolf</a>
+                    <a href="#projects">Aurora</a>
+                    <a href="#projects">GreenCart</a>
                 </div>
 
                 <div className="footer-column">

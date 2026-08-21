@@ -1,5 +1,7 @@
 // React and CSS Imports
 import './Home.css'
+import { useState, useEffect } from 'react';
+import { motion } from 'motion/react'
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
@@ -61,7 +63,6 @@ function Home() {
 			[1,1,1,0,1,0,1,1,1,1,0],
 			[1,0,0,0,0,0,0,1,0,1,1]
 		];
-
 	const visibilityMatrixSkills = [
 			[1,0,0,0,0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0,0,0,0,0],
@@ -79,7 +80,6 @@ function Home() {
 			[1,1,0,1,1,0,0,0,0,1,1],
 			[1,0,0,0,1,0,0,0,0,0,1]
 		];
-
 	const visibilityMatrixExperience = [
 		[1,1,0,0,0,0,0,0,0,0,1],  
 		[1,0,0,0,0,0,0,0,1,1,1],  
@@ -93,8 +93,8 @@ function Home() {
 		[1,0,0,0,0,0,0,0,0,1,0],  
 		[1,1,0,0,0,0,0,0,0,0,1],  
 		[0,1,0,0,0,0,0,0,0,0,0], 
-		[1,1,0,0,0,0,0,0,0,0,0],  
-		[0,0,1,0,0,0,0,0,0,0,0],  
+		[1,1,0,1,0,0,0,0,0,0,0],  
+		[0,0,0,0,0,0,0,0,0,0,0],  
 		[0,0,0,0,0,0,0,0,0,0,0], 
 		[1,0,0,0,0,0,0,0,0,0,0],  
 		[1,0,0,0,0,0,0,0,0,0,0],  
@@ -141,7 +141,6 @@ function Home() {
 		[0,0,0,0,0,0,0,0,0,0,1],  
 		[0,0,0,0,0,0,0,0,0,1,1]   
 	];
-
 	const experienceFeed = [
 		{
 			'position': 'Lecturer\'s Assistant - Compiler Construction',
@@ -202,11 +201,10 @@ function Home() {
 		}
 
 	];
-
 	const nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
 		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
-		{ id: 3, icon: django, name: "Django", x: 1250, y: 250 },
+		{ id: 3, icon: django, name: "Django", x: 1150, y: 250 },
 		{ id: 4, icon: javascript, name: "JavaScript", x: 400, y: 290 },
 		{ id: 5, icon: typescript, name: "TypeScript", x: 850, y: 400 },
 		{ id: 6, icon: nodejs, name: "Node.js", x: 1200, y: 570 },
@@ -228,7 +226,6 @@ function Home() {
 		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
 		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
 	];
-
 	const edges = [
 		{ from: 1, to: 2 },
 		{ from: 2, to: 3 },
@@ -273,13 +270,37 @@ function Home() {
 			<Navigation />
 
 			<div>
-				<TypedName/>
-				<p className="bio" id='bio'>I am a final-year <em>BSc Computer Science</em> student at the <em>University of Pretoria</em>. As a passionate <em>back-end developer</em>, I have a strong interest in <em>software engineering</em> and a deep love for <em>problem-solving</em>. I truly enjoy the challenge of <em>designing</em> and <em>building</em> elegant and efficient solutions. My enthusiasm for technology extends beyond the code, as I also enjoy <em>discovering</em> and <em>experimenting</em> with new <em>Linux</em> distributions. I am currently using <em>Arch Linux</em> and has finnished exploring <em>Ubuntu</em> and various <em>Garuda</em> distributions. I am also deeply interested in learning about <em>cyber security</em> and enjoy the intricacies of <em>low-level programming</em>, including <em>Assembly</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em> and a <em>lifelong learner</em>, driven by the desire to <em>build new things</em> and continually expand my knowledge in the ever-evolving tech landscape.</p>
+				<TypedName id='bio'/>
+				
+				<motion.div
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ 
+						duration: 1.5,
+						type: 'spring',
+						stiffness: 80,
+						damping: 20,
+					}}
+					>
+					<p className="bio">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
+				</motion.div>
+			
 			</div>
 
-			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation}>
+			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation} parrallax={true} overflow>
 				<h2 className="education-title" id='education'><span className="name">Educational</span> Background.</h2>
-				<div className="education-cards">
+				
+				<motion.div 
+					className="education-cards"
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ 
+						duration: 0.8, 
+						type: 'spring',
+						stiffness: 80,
+						damping: 20,
+					}}
+				>
 					<EducationCard 
 						icon={ehs} 
 						institution="Edenvale High School" 
@@ -310,7 +331,7 @@ function Home() {
 						degreeLink="https://www.up.ac.za/" 
 					/>
 					
-				</div>
+				</motion.div>
 				<h2 className="technical-skills-title" id='skills'><span className="name">Technical</span> Skills.</h2>
 			</HoneycombBackground>
 
@@ -318,9 +339,20 @@ function Home() {
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 
-			<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
+			<motion.div
+				initial={{ opacity: 0, y: 100 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ 
+					duration: 1.5,
+					type: 'spring',
+					stiffness: 80,
+					damping: 20,
+				}}
+			>
+				<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
+			</motion.div>
 			
-			<Gallery interval={1500} gap={0}>
+			<Gallery interval={1500} gap={0} >
 				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
 				<MinimalCard icon={aws} name="AWS" subtitle={"Cloud Services"} />
 				<MinimalCard icon={postgreSQL} name="PostgreSQL" subtitle={"Database Management System"} />
@@ -356,11 +388,11 @@ function Home() {
 
 			<h2 className='work-experience-title' id='work'>Work <span className='name'>Experience</span>/<span className='name'>Journey</span></h2>
 
-			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false}>
+			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false} parrallax={true}>
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
-			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <em>projects</em> & <em>about</em>!</p>
+			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <a href='/projects'>projects</a> & <a href='/about'>about</a> pages!</p>
 
 			<ScrollToTopButton />
 

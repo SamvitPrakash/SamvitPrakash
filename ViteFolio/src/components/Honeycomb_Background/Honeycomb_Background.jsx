@@ -1,7 +1,16 @@
 import { useRef, useEffect } from 'react';
+import { motion } from 'motion/react';
 import './Honeycomb_Background.css';
 
-function HoneycombBackground({ width, height, visibilityMatrix, children, animate = true }) {
+function HoneycombBackground({ 
+    width, 
+    height, 
+    visibilityMatrix, 
+    children, 
+    animate = true, 
+    parrallax = false ,
+    overflow = false
+}) {
     const hexRefs = useRef([]);
 
     useEffect(() => {
@@ -53,7 +62,7 @@ function HoneycombBackground({ width, height, visibilityMatrix, children, animat
             key={rowIdx}
         >
             {Array.from({ length: width }).map((_, colIdx) => (
-                <div
+                <motion.div
                     key={`${rowIdx}-${colIdx}`}
                     id={`hex-${rowIdx}-${colIdx}`}
                     className="honeycomb-background"
@@ -61,13 +70,21 @@ function HoneycombBackground({ width, height, visibilityMatrix, children, animat
                     style={{
                         visibility: visibilityMatrix?.[rowIdx]?.[colIdx] ? 'visible' : 'hidden',
                     }}
-                ></div>
+                    initial={ parrallax ? { opacity: 0, y: 100 } : { opacity: 1, y: 0 } }
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ 
+						duration: 0.8, 
+						type: 'spring',
+						stiffness: 80,
+						damping: 20,
+					}}
+                />
             ))}
         </div>
     );
 
     return (
-        <div className="honeycomb-bg-wrapper">
+        <div className="honeycomb-bg-wrapper" style={{ overflow: overflow ? 'hidden' : 'visible' }}>
             <div className="honeycomb-container">
                 {Array.from({ length: height }).map((_, rowIdx) => renderRow(rowIdx))}
             </div>

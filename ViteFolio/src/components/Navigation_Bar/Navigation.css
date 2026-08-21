@@ -5,7 +5,7 @@
     align-items: center;
     vertical-align: middle;
     /* border-bottom: 1px solid var(--current-text); */
-    margin-bottom: 8rem;
+    margin-bottom: clamp(8rem, 17vw, 15rem);
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0rem;

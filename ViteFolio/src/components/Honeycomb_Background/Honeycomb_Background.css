@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    /* overflow: hidden; */
 }
 
 .honeycomb-container{
@@ -19,6 +20,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+}
+
+.honeycomb-content > * {
     width: 100%;
 }
 

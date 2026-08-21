@@ -16,3 +16,18 @@
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
+
+@media (max-width: 320px){
+    .minimal-card{
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .minimal-title{
+        font-size: 1rem;
+    }
+
+    .minimal-subtitle{
+        font-size: 1rem;
+    }
+}
