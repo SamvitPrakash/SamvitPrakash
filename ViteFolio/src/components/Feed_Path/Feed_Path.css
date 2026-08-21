@@ -1,0 +1,30 @@
+.feed-path-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.feed-path-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feed-path-left {
+    padding-left: 10rem;
+    align-self: start;
+    z-index: 1;
+}
+
+.feed-path-right {
+    padding-right: 10rem;
+    align-self: end;
+    z-index: 1;
+}

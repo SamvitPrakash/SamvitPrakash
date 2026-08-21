@@ -1,0 +1,43 @@
+.skill-tree-description-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 220px;
+}
+
+.carousel-track {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.carousel-slide {
+    width: 30rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track.animate-in {
+    animation: fadeInSlide 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-slide {
+        width: 20rem;
+    }
+}

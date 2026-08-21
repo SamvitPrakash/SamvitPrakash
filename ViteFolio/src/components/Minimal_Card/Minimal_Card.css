@@ -1,0 +1,33 @@
+.minimal-card{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--current-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 1.5px 4px rgba(0,0,0,0.15);
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--current-primary);
+}
+
+.minimal-card:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 320px){
+    .minimal-card{
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .minimal-title{
+        font-size: 1rem;
+    }
+
+    .minimal-subtitle{
+        font-size: 1rem;
+    }
+}
