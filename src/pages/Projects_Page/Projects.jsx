@@ -1,18 +1,18 @@
 import './Projects.css'
 import { motion } from 'motion/react';
-import Navigation from '../../components/Navigation_Bar/Navigation';
-import TypedName from '../../components/Typed_Name/Typed_Name';
-import ScrollExpand from '../../components/Scroll_Expand/ScrollExpand';
-import InformationModal from '../../components/Information_Modal/InformationModal';
-import HoneycombBackground from '../../components/Honeycomb_Background/Honeycomb_Background';
-import SecondaryProject from '../../components/Secondary_Project/SecondaryProject';
+import Navigation from '../../components/Navigation_Bar/Navigation.jsx';
+import TypedName from '../../components/Typed_Name/Typed_Name.jsx';
+import ScrollExpand from '../../components/Scroll_Expand/ScrollExpand.jsx';
+import InformationModal from '../../components/Information_Modal/InformationModal.jsx';
+import HoneycombBackground from '../../components/Honeycomb_Background/Honeycomb_Background.jsx';
+import SecondaryProject from '../../components/Secondary_Project/SecondaryProject.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer/Footer.jsx';
 
-import direwolfCover from '../../assets/Projects/Direwolf/Cover.png'
-import direwolfLogo from '../../assets/Projects/Direwolf/Logo.svg'
-import auroraCover from '../../assets/Projects/Aurora/Cover.mp4'
-import greencartCover from '../../assets/Projects/Greencart/Cover.mp4'
+import direwolfCover from '../../../assets/Projects/Direwolf/Cover.png'
+import direwolfLogo from '../../../assets/Projects/Direwolf/Logo.svg'
+import auroraCover from '../../../assets/Projects/Aurora/Cover.mp4'
+import greencartCover from '../../../assets/Projects/Greencart/Cover.mp4'
 import { FaGithub } from 'react-icons/fa';
 
 export function Projects() {
