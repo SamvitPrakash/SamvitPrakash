@@ -1,31 +1,12 @@
-# potential-journey
-Potential Journey is the portfolio website for myself. It should highlight myself as a prospective employee and individual as well as my skillsets, experience and projects. This will also be my learning opurtunity into UI/UX development.
+# React + Vite
 
-# Initial User Flow Diagram
-![Initial User Flow Diagram](Documentation/Assets/initial_user_flow.svg)
-This diagram illustrates the initial user flow for the portfolio website. The design guides visitors through a curated introduction, presenting key information about my background, skills, and experience. After this guided overview, users are seamlessly transitioned into the main site, where they are free to explore projects, achievements, and additional content at their own pace.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ About This Portfolio
+Currently, two official plugins are available:
 
-Welcome to my personal portfolio, **Potential Journey**. This site is crafted to showcase my professional journey, technical expertise, and creative projects. It also serves as a platform to demonstrate my growth and learning in UI/UX development.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## 🚀 Features
-
-- **Interactive User Flow:** Engaging introduction to highlight core competencies.
-- **Project Gallery:** Detailed case studies and project highlights.
-- **Responsive Design:** Optimized for all devices and screen sizes.
-- **Modern UI/UX:** Clean, intuitive, and accessible interface.
-
----
-
-## 📈 Goals
-
-- Present myself as a strong candidate for prospective employers.
-- Demonstrate my skills in web development and design.
-- Provide an engaging and informative user experience.
-
----
-
-Thank you for visiting! Feel free to explore and connect.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
