@@ -136,7 +136,7 @@ export function Projects() {
 
                         <InformationModal className='project-content'>
                             <div className='project-links'>
-                                <a className='view-degree-button' target='_blank' href='https://github.com/SamvitPrakash-23525119/Direwolf' >Github
+                                <a className='view-degree-button' target='_blank' href='https://github.com/SamvitPrakash/Direwolf' >Github
                                     <FaGithub className="degree-icon" style={{marginLeft: "0.5em"}} />
                                 </a>
                             </div>
@@ -171,7 +171,7 @@ export function Projects() {
                     >
                         <InformationModal className='project-content'>
                             <div className='project-links'>
-                                <a className='view-degree-button' target='_blank' href='https://github.com/SamvitPrakash-23525119/Aurora' >Github
+                                <a className='view-degree-button' target='_blank' href='https://github.com/SamvitPrakash/Aurora' >Github
                                     <FaGithub className="degree-icon" style={{marginLeft: "0.5em"}} />
                                 </a>
                             </div>
@@ -225,14 +225,14 @@ export function Projects() {
                     <SecondaryProject 
                         name='Shiny Chainsaw' 
                         description='An insider-threat detection platform that demonstrates how AI can be applied to metadata analysis in digital forensics investigations. The system ingests raw behavioural metadata records for employees, aggregates them into per-user profiles, and applies three complementary AI techniques to automate pattern recognition, anomaly detection, and correlation analysis.' 
-                        link='https://github.com/SamvitPrakash-23525119/shiny-chainsaw' 
+                        link='https://github.com/SamvitPrakash/shiny-chainsaw' 
                         parralax
                     />
 
                     <SecondaryProject 
                         name='Compiler Project' 
                         description='A compiler, developed as part of the COS 341 semester project. This compiler is designed for the Student Programming Language (SPL) and provides a robust environment for compiling SPL programs.' 
-                        link='https://github.com/SamvitPrakash-23525119/Compiler-Project' 
+                        link='https://github.com/SamvitPrakash/Compiler-Project' 
                         parralax
                     />
 

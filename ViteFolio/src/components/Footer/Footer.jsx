@@ -22,12 +22,12 @@ export function Footer() {
                     <a href="#projects">GreenCart</a>
                 </div>
 
-                <div className="footer-column">
+                {/* <div className="footer-column">
                     <h5 className="footer-column-title">About</h5>
                     <a href="#about">What's New</a>
                     <a href="#about">My Goals</a>
                     <a href="#about">My Interests</a>
-                </div>
+                </div> */}
 
                 {/* <div className="footer-column">
                     <h5 className="footer-column-title">Contact Me</h5>
