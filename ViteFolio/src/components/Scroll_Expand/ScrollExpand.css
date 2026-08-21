@@ -36,6 +36,17 @@
   will-change: clip-path;
 }
 
+.scroll-expand__media-container{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-color: var(--current-secondary);
+  /* background-color: black; */
+  opacity: 1;
+  will-change: opacity, background-color;
+}
+
 .scroll-expand__media {
   position: absolute;
   inset: 0;
@@ -46,6 +57,7 @@
   /* object-fit: contain; */
   will-change: transform;
   transform-origin: center;
+  z-index: 0;
   user-select: none;
   -webkit-user-drag: none;
 
@@ -89,6 +101,7 @@
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
   pointer-events: none;
   will-change: opacity, transform;
+  /* background-color: red; */
 }
 
 .scroll-expand__hint {

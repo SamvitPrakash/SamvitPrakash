@@ -2,7 +2,15 @@ import { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
 import './Honeycomb_Background.css';
 
-function HoneycombBackground({ width, height, visibilityMatrix, children, animate = true, parrallax = false }) {
+function HoneycombBackground({ 
+    width, 
+    height, 
+    visibilityMatrix, 
+    children, 
+    animate = true, 
+    parrallax = false ,
+    overflow = false
+}) {
     const hexRefs = useRef([]);
 
     useEffect(() => {
@@ -76,7 +84,7 @@ function HoneycombBackground({ width, height, visibilityMatrix, children, animat
     );
 
     return (
-        <div className="honeycomb-bg-wrapper">
+        <div className="honeycomb-bg-wrapper" style={{ overflow: overflow ? 'hidden' : 'visible' }}>
             <div className="honeycomb-container">
                 {Array.from({ length: height }).map((_, rowIdx) => renderRow(rowIdx))}
             </div>

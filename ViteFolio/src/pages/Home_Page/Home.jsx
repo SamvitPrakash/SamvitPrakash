@@ -281,13 +281,13 @@ function Home() {
 						stiffness: 80,
 						damping: 20,
 					}}
-				>
-					<p className="bio">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. <br/> I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, <em>Linux</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. <br/>I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. My research focuses on telecommunications <em>security</em> and <em>integrity</em> in modern communication <em>networks</em>, where I am exploring the <em>challenges</em> involved in securing increasingly <em>complex communication systems</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
+					>
+					<p className="bio">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
 				</motion.div>
 			
 			</div>
 
-			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation} parrallax={true}>
+			<HoneycombBackground width={11} height={10} visibilityMatrix={visibilityMatrixEducation} parrallax={true} overflow>
 				<h2 className="education-title" id='education'><span className="name">Educational</span> Background.</h2>
 				
 				<motion.div 

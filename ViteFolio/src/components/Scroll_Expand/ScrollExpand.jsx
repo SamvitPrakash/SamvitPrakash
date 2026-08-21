@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useRef } from 'react';
-
+import { Fragment, useCallback, useEffect, useRef } from 'react';
+import MaskedHeading from '../Masked_Heading/MaskedHeading';
 import './ScrollExpand.css';
 
 const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
@@ -37,6 +37,7 @@ const ScrollExpand = ({
 	const stageRef = useRef(null);
 	const frameRef = useRef(null);
 	const mediaRef = useRef(null);
+	const mediaContainerRef = useRef(null);
 	const titleRef = useRef(null);
 	const overlayRef = useRef(null);
 	const scrimRef = useRef(null);
@@ -64,6 +65,7 @@ const ScrollExpand = ({
 		const c = propsRef.current;
 
 		const e = smoothstep(0, 1, p);
+		const out = smoothstep(0.01, 0.88, p);
 
 		const w = c.startWidth + (100 - c.startWidth) * e;
 		const h = c.startHeight + (100 - c.startHeight) * e;
@@ -76,8 +78,13 @@ const ScrollExpand = ({
 
 		if (scrimRef.current) scrimRef.current.style.opacity = `${c.overlayScrim * e}`;
 
+		if (mediaContainerRef.current) {
+			mediaContainerRef.current.style.opacity = '1';
+			// mediaContainerRef.current.style.backgroundColor = `rgba(0, 0, 0, ${0.8 * (1 - out)})`;
+			mediaContainerRef.current.style.opacity = `${0.8 * (1 - out)}`;
+		}
+
 		if (titleRef.current) {
-			const out = smoothstep(0.4, 0.88, p);
 			titleRef.current.style.opacity = `${1 - out}`;
 			titleRef.current.style.transform = `translate3d(0, ${-28 * out}px, 0) scale(${1 + 0.06 * out})`;
 		}
@@ -187,18 +194,24 @@ const ScrollExpand = ({
 
 	const media =
 		mediaType === 'video' ? (
-			<video
-				ref={mediaRef}
-				className="scroll-expand__media"
-				src={src}
-				poster={poster}
-				autoPlay
-				muted
-				loop
-				playsInline
-			/>
+			<Fragment>
+				<video
+					ref={mediaRef}
+					className="scroll-expand__media"
+					src={src}
+					poster={poster}
+					autoPlay
+					muted
+					loop
+					playsInline
+				/>
+				<div ref={mediaContainerRef} className="scroll-expand__media-container" />
+			</Fragment>
 		) : (
-			<img ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} draggable={false} />
+			<Fragment>
+				<img ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} draggable={false} />
+				<div ref={mediaContainerRef} className="scroll-expand__media-container" />
+			</Fragment>
 		);
 
 	return (
@@ -221,9 +234,15 @@ const ScrollExpand = ({
 					</div>
 					{title ? (
 						<div ref={titleRef} className="scroll-expand__title">
-							<h1 className={className}>
-								{title}
-							</h1>
+							<MaskedHeading 
+								src={src} 
+								mediaType={mediaType} 
+								text={title} 
+								trigger='hover' 
+								reveal='rise' 
+								drift={200}
+							/>
+							{/* {title} */}
 						</div>
 					) : null}
 					{scrollHint ? (
