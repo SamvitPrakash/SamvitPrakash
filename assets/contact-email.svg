@@ -1,0 +1,21 @@
+<svg width="442" height="132" viewBox="0 0 442 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Email Samvit Prakash">
+  <defs><style>
+:root{ --bg:#eaf7fb; --text:#0b1f2a; --primary:#176b87; --secondary:#8fd3e8; --accent:#25a9d6; }
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#07151b; --text:#dff5fa; --primary:#7bcce3; --secondary:#185d73; --accent:#39c6ed; }
+}
+.card{ fill:var(--bg); stroke:var(--secondary); stroke-width:1.5; }
+.band{ fill:var(--primary); }
+.icon{ fill:none; stroke:var(--accent); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+.label{ fill:var(--accent); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:700; font-size:12.5px; letter-spacing:1.5px; }
+.value{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:700; }
+.arrow{ stroke:var(--accent); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+</style></defs>
+  <rect x="1" y="1" width="440" height="130" rx="16" class="card"/>
+  <rect x="1" y="1" width="7" height="130" rx="3.5" class="band"/>
+  <circle cx="60" cy="66" r="28" class="icon"/>
+  <path class="icon" d="M46 56 L60 68 L74 56 M44 54 h32 v24 h-32 Z"/>
+  <text x="110" y="52" class="label">EMAIL</text>
+  <text x="110" y="82" class="value" font-size="15.5">samvitprakash2004@gmail.com</text>
+  <path class="arrow" d="M396 44 L412 60 L396 76 M368 60 L410 60"/>
+</svg>

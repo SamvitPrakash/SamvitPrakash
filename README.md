@@ -167,12 +167,10 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 [![Let's Connect](assets/header-contact.svg)](#lets-connect)
 
-| Where | Link |
-| --- | --- |
-| ✉️ Email | [samvitprakash2004@gmail.com](mailto:samvitprakash2004@gmail.com) |
-| 💼 LinkedIn | [in/samvit-prakash-4b8546298](https://www.linkedin.com/in/samvit-prakash-4b8546298/) |
-| 🐙 GitHub | [@SamvitPrakash](https://github.com/SamvitPrakash) |
-| 📍 Location | Hatfield, Pretoria, South Africa |
+<img src="./assets/contact-email.svg" alt="Email">
+<!-- <img src="./assets/contact-github.svg" alt="GitHub"> -->
+<img src="./assets//contact-linkedin.svg" alt="LinkedIn">
+<img src="./assets/contact-location.svg" alt="Location">
 
 <div align="center">
 
