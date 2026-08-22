@@ -99,19 +99,21 @@ export function Projects() {
         <>
             <Navigation />
             
-            <TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
-            <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                    duration: 1.5,
-                    type: 'spring',
-                    stiffness: 80,
-                    damping: 20,
-                }}
-            >
-                <p className="bio">A <em>selection</em> of <em>projects</em> that represent the <em>work</em> I'm most <em>proud</em> of, highlighting my <em>interests</em>, <em>skills</em>, and <em>approach</em> to <em>software development</em>. Each project explores a <em>different idea</em>, <em>technology</em>, or <em>challenge</em>, offering a <em>glimpse</em> into how I <em>build</em> and <em>experiment</em> with software.</p>
-            </motion.div>
+            <div className='projects-intro-container'>
+                <TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                        duration: 1.5,
+                        type: 'spring',
+                        stiffness: 80,
+                        damping: 20,
+                    }}
+                >
+                    <p className="bio">A <em>selection</em> of <em>projects</em> that represent the <em>work</em> I'm most <em>proud</em> of, highlighting my <em>interests</em>, <em>skills</em>, and <em>approach</em> to <em>software development</em>. Each project explores a <em>different idea</em>, <em>technology</em>, or <em>challenge</em>, offering a <em>glimpse</em> into how I <em>build</em> and <em>experiment</em> with software.</p>
+                </motion.div>
+            </div>
             
             <HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixProjects} animate={false} parrallax>
                 <motion.div
