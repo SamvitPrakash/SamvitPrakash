@@ -1,0 +1,18 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Work Experience">
+  <defs><style>
+:root{ --bg:#eaf7fb; --text:#0b1f2a; --primary:#176b87; --secondary:#8fd3e8; --accent:#25a9d6; }
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#07151b; --text:#dff5fa; --primary:#7bcce3; --secondary:#185d73; --accent:#39c6ed; }
+}
+.card{ fill:var(--bg); stroke:var(--secondary); stroke-width:1.5; }
+.title{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:800; font-size:26px; }
+.band{ fill:var(--primary); }
+.line{ stroke:var(--accent); stroke-width:2; }
+.dot{ fill:var(--accent); }
+</style></defs>
+  <rect x="1" y="1" width="898" height="62" rx="14" class="card"/>
+  <rect x="1" y="1" width="7" height="62" rx="3.5" class="band"/>
+  <circle cx="34" cy="32" r="5" class="dot"/>
+  <text x="54" y="41" class="title">Work Experience</text>
+  <line x1="299" y1="32" x2="880" y2="32" class="line"/>
+</svg>

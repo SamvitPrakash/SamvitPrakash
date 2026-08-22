@@ -1,0 +1,51 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Samvit Prakash. Back-end leaning full-stack developer.">
+  <defs>
+    <style>
+      :root{
+        --bg:#eaf7fb; --text:#0b1f2a; --primary:#176b87; --secondary:#8fd3e8; --accent:#25a9d6;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{ --bg:#07151b; --text:#dff5fa; --primary:#7bcce3; --secondary:#185d73; --accent:#39c6ed; }
+      }
+      .card{ fill:var(--bg); stroke:var(--secondary); stroke-width:1.5; }
+      .band{ fill:var(--primary); }
+      .name{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:800; font-size:40px; }
+      .role{ fill:var(--accent); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:600; font-size:16px; letter-spacing:2px; }
+      .tag{ fill:var(--text); font-family:'Consolas','SFMono-Regular',monospace; font-size:16px; }
+      .cursor{ fill:var(--accent); animation:blink 1s steps(1) infinite; }
+      .ring{ fill:none; stroke:var(--accent); stroke-width:3; }
+      .dot{ fill:var(--accent); }
+      @keyframes blink{ 0%,49%{opacity:1;} 50%,100%{opacity:0;} }
+      @keyframes reveal{ from{ width:0; } to{ width:620px; } }
+      .typemask rect{ animation:reveal 3.5s steps(60,end) 1 both; }
+    </style>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.15"/>
+    </linearGradient>
+    <clipPath id="clipType">
+      <g class="typemask"><rect x="0" y="0" height="26"/></g>
+    </clipPath>
+    <clipPath id="clipAvatar">
+      <circle cx="122" cy="130" r="66"/>
+    </clipPath>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="256" rx="22" class="card"/>
+  <rect x="2" y="2" width="896" height="256" rx="22" fill="url(#g1)"/>
+  <rect x="2" y="2" width="10" height="256" rx="5" class="band"/>
+
+  <circle cx="122" cy="130" r="69" class="ring"/>
+  <image href="https://avatars.githubusercontent.com/u/109902553?v=4" x="56" y="64" width="132" height="132" clip-path="url(#clipAvatar)"/>
+
+  <text x="222" y="88" class="role">SOFTWARE DEVELOPER · PRETORIA, SOUTH AFRICA</text>
+  <text x="222" y="140" class="name">Samvit Prakash</text>
+
+  <g clip-path="url(#clipType)">
+    <text x="222" y="180" class="tag">Back-end leaning full-stack dev. Systems tinkerer. Lifelong learner.</text>
+  </g>
+  <rect x="222" y="166" width="3" height="20" class="cursor"/>
+
+  <circle cx="240" cy="212" r="3" class="dot"/>
+  <text x="252" y="217" class="tag" font-size="13">BSc Honours Computer Science, University of Pretoria (2026)</text>
+</svg>
