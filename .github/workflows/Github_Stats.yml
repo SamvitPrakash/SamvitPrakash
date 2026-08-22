@@ -21,11 +21,18 @@ jobs:
           options: username=SamvitPrakash&show_icons=true
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=SamvitPrakash&layout=compact&langs_count=8
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit stats card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg
+          git add assets/stats.svg assets/top-langs.svg
           git commit -m "Update GitHub stats" || exit 0
           git push
