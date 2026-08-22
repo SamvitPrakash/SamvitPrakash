@@ -28,7 +28,6 @@ const ScrollExpand = ({
 	useWindowScroll = false,
 	enabled = true,
 	children,
-	className = '',
 	style,
 	...rest
 }) => {
