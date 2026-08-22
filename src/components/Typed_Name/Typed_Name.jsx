@@ -33,7 +33,7 @@ function TypedName({fullText = "Hey, I'm", fullName = " Samvit Prakash", punctua
             clearInterval(interval);
             clearInterval(cursorInterval);
         };
-    }, []);
+    },[fullText, fullName, punctuation]);
 
     return (
         <h1 className='title' id={id}>

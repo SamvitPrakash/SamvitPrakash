@@ -1,8 +1,9 @@
 // React and CSS Imports
 import './Home.css'
-import { useState, useEffect } from 'react';
 import { motion } from 'motion/react'
 import { FaGithub } from 'react-icons/fa';
+
+const MotionDiv = motion.div;
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
@@ -289,7 +290,7 @@ function Home() {
 						
 						<TypedName id='bio'/>
 
-						<motion.div
+						<MotionDiv
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ 
@@ -300,9 +301,9 @@ function Home() {
 							}}
 						>
 							<p className='bio'><i>"Not all those who <em>wander</em> are <em>lost</em>."</i></p>
-						</motion.div>
+						</MotionDiv>
 
-						<motion.div
+						<MotionDiv
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ 
@@ -313,9 +314,9 @@ function Home() {
 							}}
 						>
 							<p className='bio'> ~ <em>Bilbo Baggins</em></p>
-						</motion.div>
+						</MotionDiv>
 
-						<motion.div
+						<MotionDiv
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ 
@@ -326,7 +327,7 @@ function Home() {
 							}}
 						>
 							<p className="bio bio-text">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
-						</motion.div>
+						</MotionDiv>
 							
 					</div>
 				</SwarmCursor>
@@ -385,7 +386,7 @@ function Home() {
 				<SkillComplex nodes={nodes} edges={edges} />
 			</HoneycombBackground>
 
-			<motion.div
+			<MotionDiv
 				initial={{ opacity: 0, y: 100 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ 
@@ -396,7 +397,7 @@ function Home() {
 				}}
 			>
 				<p className='skill-tree-description'>The <em>languages</em>, <em>frameworks</em>, and <em>tools</em> you see here are just a <em>snapshot</em> of my <em>technical skills</em>. My <em>true strength</em> lies in my <em>adaptability</em> and my <em>passion</em> for learning. I pride myself on my ability to <em>quickly</em> and <em>efficiently</em> understand <em>new concepts</em> and <em>languages</em> for <em>integration</em> into my work. This allows me to not only <em>excel</em> with the <em>technologies</em> I'm currently using but also to <em>swiftly pivot</em> and <em>master</em> new ones to meet <em>any challenges</em> that may lie ahead.</p>
-			</motion.div>
+			</MotionDiv>
 			
 			<Gallery interval={1500} gap={0} >
 				<MinimalCard icon={github} name="GitHub" subtitle={"Version Control & Collaboration"} />	
