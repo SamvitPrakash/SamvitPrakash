@@ -167,10 +167,12 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 [![Let's Connect](assets/header-contact.svg)](#lets-connect)
 
-<img src="./assets/contact-email.svg" alt="Email">
-<!-- <img src="./assets/contact-github.svg" alt="GitHub"> -->
-<img src="./assets//contact-linkedin.svg" alt="LinkedIn">
-<img src="./assets/contact-location.svg" alt="Location">
+<div align="center">
+  <img src="./assets/contact-email.svg" alt="Email">
+  <!-- <img src="./assets/contact-github.svg" alt="GitHub"> -->
+  <img src="./assets//contact-linkedin.svg" alt="LinkedIn">
+  <!-- <img src="./assets/contact-location.svg" alt="Location"> -->
+</div>
 
 <div align="center">
 
