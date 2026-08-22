@@ -23,7 +23,7 @@
 
 > I graduated with a **BSc in Computer Science** from the University of Pretoria and am now completing my **BSc Honours**. Alongside my studies I work as a **Lecturer's Assistant / Tutor**, breaking down Programming Languages, Data Structures, and Imperative Programming for undergrads — which has probably made me a better communicator than most of my code comments suggest.
 
-I see myself as a designer, creator, and lifelong learner. My main interest is **back-end and full-stack development**, but I spend a healthy amount of time in **cybersecurity** and **Linux systems tinkering** — [Direwolf](https://github.com/SamvitPrakash/Direwolf), my custom Wayland/Hyprland desktop shell, is where most of that energy goes when I'm not shipping features for clients or coursework.
+> I see myself as a designer, creator, and lifelong learner. My main interest is **back-end and full-stack development**, but I spend a healthy amount of time in **cybersecurity** and **Linux systems tinkering** — [Direwolf](https://github.com/SamvitPrakash/Direwolf), my custom Wayland/Hyprland desktop shell, is where most of that energy goes when I'm not shipping features for clients or coursework.
 
 <!-- | | |
 | --- | --- |
