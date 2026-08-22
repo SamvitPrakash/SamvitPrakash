@@ -18,7 +18,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=SamvitPrakash&show_icons=true
+          options: username=SamvitPrakash&show_icons=true&theme=transparent&hide_border=true&title_color=25A9D6&icon_color=176B87&text_color=0B1F2A&ring_color=25A9D6
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -26,14 +26,14 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=SamvitPrakash&layout=compact&langs_count=8
+          options: username=SamvitPrakash&layout=compact&langs_count=8&theme=transparent&hide_border=true&title_color=25A9D6&text_color=0B1F2A
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate streak card
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: user=${{ github.repository_owner }}&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A
+          options: user=SamvitPrakash&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A
           path: assets/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

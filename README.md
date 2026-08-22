@@ -165,9 +165,13 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 <img src="./assets/top-langs.svg" alt="Top Languages" height="165">
 
-<img src="https://streak-stats.demolab.com/?user=SamvitPrakash&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A" alt="GitHub streak"/>
+<!-- <img src="https://streak-stats.demolab.com/?user=SamvitPrakash&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A" alt="GitHub streak"/> -->
 
-<img src="https://github-profile-trophy.vercel.app/?username=SamvitPrakash&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub trophies"/>
+<img src="./assets/streak.svg" alt="GitHub streak">
+
+<!-- <img src="https://github-profile-trophy.vercel.app/?username=SamvitPrakash&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub trophies"/> -->
+
+<img src="./assets/trophy.svg" alt="GitHub trophies" >
 
 </div>
 
