@@ -157,8 +157,13 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=SamvitPrakash&show_icons=true&theme=transparent&hide_border=true&title_color=25A9D6&icon_color=176B87&text_color=0B1F2A&ring_color=25A9D6" alt="Samvit's GitHub stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamvitPrakash&layout=compact&theme=transparent&hide_border=true&title_color=25A9D6&text_color=0B1F2A&langs_count=8" alt="Top languages" height="165"/>
+<!-- <img src="https://github-readme-stats.vercel.app/api?username=SamvitPrakash&show_icons=true&theme=transparent&hide_border=true&title_color=25A9D6&icon_color=176B87&text_color=0B1F2A&ring_color=25A9D6" alt="Samvit's GitHub stats" height="165"/> -->
+
+<img src="./assets/stats.svg" alt="Samvits's GitHub stats" height="165">
+
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamvitPrakash&layout=compact&theme=transparent&hide_border=true&title_color=25A9D6&text_color=0B1F2A&langs_count=8" alt="Top languages" height="165"/> -->
+
+<img src="./assets/top-langs.svg" alt="Top Languages" height="165">
 
 <img src="https://streak-stats.demolab.com/?user=SamvitPrakash&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A" alt="GitHub streak"/>
 
