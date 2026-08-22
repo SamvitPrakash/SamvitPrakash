@@ -2,10 +2,12 @@
 import './Home.css'
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react'
+import { FaGithub } from 'react-icons/fa';
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
 import TypedName from "../../components/Typed_Name/Typed_Name.jsx";
+import Swarm from "../../components/Swarm_Cursor/Swarm_Cursor.jsx";
 import EducationCard from "../../components/Education_Card/Education_Card.jsx";
 import HoneycombBackground from "../../components/Honeycomb_Background/Honeycomb_Background.jsx";
 import SkillComplex from "../../components/Skill_Tree/Skill_Complex/Skill_Complex.jsx";
@@ -49,6 +51,7 @@ import mySQL from '../../../assets/Skill_Icons/mySQL.svg';
 import postgreSQL from '../../../assets/Skill_Icons/postgreSQL.svg';
 import phpMyAdmin from '../../../assets/Skill_Icons/phpMyAdmin.svg';
 import sfy from '../../../assets/Company_Icons/SFY.jpg';
+import SwarmCursor from '../../components/Swarm_Cursor/Swarm_Cursor.jsx';
 
 function Home() {
 
@@ -269,21 +272,64 @@ function Home() {
 		<>
 			<Navigation />
 
-			<div>
-				<TypedName id='bio'/>
+			<div className="home-title-container">
 				
-				<motion.div
-					initial={{ opacity: 0, y: 100 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ 
-						duration: 1.5,
-						type: 'spring',
-						stiffness: 80,
-						damping: 20,
-					}}
-					>
-					<p className="bio">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
-				</motion.div>
+				<SwarmCursor
+					color="#8fd3e8;"
+					accentColor="#8fd3e8;"
+					count={11}
+					size={2}
+					speed={2.5}
+					spread={70}
+					wander={0.33}
+					trail={0.7}
+					scatterOnClick
+				>
+					<div className="bio-container">
+						
+						<TypedName id='bio'/>
+
+						<motion.div
+							initial={{ opacity: 0, y: 100 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ 
+								duration: 1.5,
+								type: 'spring',
+								stiffness: 80,
+								damping: 20,
+							}}
+						>
+							<p className='bio'><i>"Not all those who <em>wander</em> are <em>lost</em>."</i></p>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, y: 100 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ 
+								duration: 1.5,
+								type: 'spring',
+								stiffness: 80,
+								damping: 20,
+							}}
+						>
+							<p className='bio'> ~ <em>Bilbo Baggins</em></p>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, y: 100 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ 
+								duration: 1.5,
+								type: 'spring',
+								stiffness: 80,
+								damping: 20,
+							}}
+						>
+							<p className="bio bio-text">I am a <em>Computer Science</em> graduate from the <em>University of Pretoria</em>, having graduated with <em>distinction</em> in <em>Software Engineering</em>. I am <em>currently</em> pursuing a <em>BSc Honours in Computer Science</em>, specialising in <em>cybersecurity</em>. I have a <em>strong</em> interest in <em>software engineering</em>, <em>cybersecurity</em>, <em>systems</em>, and the <em>design</em> and <em>development</em> of robust <em>software</em> solutions. I enjoy <em>solving</em> complex <em>problems</em> and turning ideas into <em>working systems</em>, with particular interest in <em>understanding</em> how software and technology <em>work</em> beneath the surface. My interests extend into <em>low-level programming</em>, <em>computer systems</em>, and <em>exploring</em> different technologies through <em>hands-on experimentation</em>. Above all, I see myself as a <em>designer</em>, <em>creator</em>, <em>problem-solver</em>, and <em>lifelong learner</em>. I enjoy <em>building</em> new things, <em>experimenting</em> with unfamiliar technologies, and continuously <em>expanding</em> my understanding of the <em>systems that shape the world</em> around us.</p>
+						</motion.div>
+							
+					</div>
+				</SwarmCursor>
 			
 			</div>
 
