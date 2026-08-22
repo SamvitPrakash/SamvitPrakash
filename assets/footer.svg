@@ -1,0 +1,22 @@
+<svg width="900" height="90" viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Samvit Prakash. Thanks for stopping by.">
+  <defs>
+    <style>
+      :root{ --bg:#eaf7fb; --text:#0b1f2a; --primary:#176b87; --secondary:#8fd3e8; --accent:#25a9d6; }
+      @media (prefers-color-scheme: dark){
+        :root{ --bg:#07151b; --text:#dff5fa; --primary:#7bcce3; --secondary:#185d73; --accent:#39c6ed; }
+      }
+      .card{ fill:var(--bg); stroke:var(--secondary); stroke-width:1.5; }
+      .band{ fill:var(--primary); }
+      .t1{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:700; font-size:17px; }
+      .t2{ fill:var(--accent); font-family:'Consolas','SFMono-Regular',monospace; font-size:12.5px; }
+      .dash{ stroke:var(--accent); stroke-width:2; stroke-dasharray:6 8; }
+      .runner{ animation:run 6s linear infinite; }
+      @keyframes run{ to{ stroke-dashoffset:-280; } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="88" rx="16" class="card"/>
+  <rect x="1" y="1" width="898" height="6" rx="3" class="band"/>
+  <line x1="30" y1="46" x2="870" y2="46" class="dash runner"/>
+  <text x="450" y="30" text-anchor="middle" class="t1">Samvit Prakash — built with curiosity, coffee and a lot of dotfiles</text>
+  <text x="450" y="70" text-anchor="middle" class="t2">samvitprakash2004@gmail.com · Pretoria, South Africa</text>
+</svg>
