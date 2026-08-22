@@ -7,6 +7,17 @@
     margin-bottom: 5rem;
 }
 
+.home-title-container{
+    width: 100%;
+    height: 70rem;    
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .bio{
     color: var(--current-text);
     text-wrap: pretty;
@@ -15,7 +26,11 @@
     margin-right: auto;
     width: 80%;
     margin-top: 0rem;
-    margin-bottom: clamp(11rem, 22vw, 25rem);
+}
+
+.bio-text{
+    /* margin-bottom: clamp(11rem, 22vw, 25rem); */
+    margin-top: clamp(11rem, 10vw, 25rem);
 }
 
 .education-cards{

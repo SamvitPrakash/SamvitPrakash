@@ -10,10 +10,11 @@ import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx'
 import Footer from '../../components/Footer/Footer.jsx';
 
 import direwolfCover from '../../../assets/Projects/Direwolf/Cover.png'
-import direwolfLogo from '../../../assets/Projects/Direwolf/Logo.svg'
 import auroraCover from '../../../assets/Projects/Aurora/Cover.mp4'
 import greencartCover from '../../../assets/Projects/Greencart/Cover.mp4'
 import { FaGithub } from 'react-icons/fa';
+
+const MotionDiv = motion.div;
 
 export function Projects() {
     const visibilityMatrixSecondaryProjects = [
@@ -99,22 +100,24 @@ export function Projects() {
         <>
             <Navigation />
             
-            <TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
-            <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                    duration: 1.5,
-                    type: 'spring',
-                    stiffness: 80,
-                    damping: 20,
-                }}
-            >
-                <p className="bio">A <em>selection</em> of <em>projects</em> that represent the <em>work</em> I'm most <em>proud</em> of, highlighting my <em>interests</em>, <em>skills</em>, and <em>approach</em> to <em>software development</em>. Each project explores a <em>different idea</em>, <em>technology</em>, or <em>challenge</em>, offering a <em>glimpse</em> into how I <em>build</em> and <em>experiment</em> with software.</p>
-            </motion.div>
+            <div className='projects-intro-container'>
+                <TypedName fullText='Welcome to my ' fullName='Projects Showcase' punctuation='!'/>
+                <MotionDiv
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                        duration: 1.5,
+                        type: 'spring',
+                        stiffness: 80,
+                        damping: 20,
+                    }}
+                >
+                    <p className="bio">A <em>selection</em> of <em>projects</em> that represent the <em>work</em> I'm most <em>proud</em> of, highlighting my <em>interests</em>, <em>skills</em>, and <em>approach</em> to <em>software development</em>. Each project explores a <em>different idea</em>, <em>technology</em>, or <em>challenge</em>, offering a <em>glimpse</em> into how I <em>build</em> and <em>experiment</em> with software.</p>
+                </MotionDiv>
+            </div>
             
             <HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixProjects} animate={false} parrallax>
-                <motion.div
+                <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ 
@@ -146,9 +149,9 @@ export function Projects() {
                     </ScrollExpand>
 
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ 
@@ -180,9 +183,9 @@ export function Projects() {
                     </ScrollExpand>
 
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ 
@@ -214,7 +217,7 @@ export function Projects() {
                     </ScrollExpand>
 
 
-                </motion.div>
+                </MotionDiv>
             </HoneycombBackground>
 
             <h2 className='secondary-project-title'><span className='name'>Projects</span> Along the Way</h2>

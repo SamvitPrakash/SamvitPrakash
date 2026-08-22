@@ -2,9 +2,11 @@ import './SecondaryProject.css';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'motion/react';
 
+const MotionDiv = motion.div;
+
 export function SecondaryProject({ name, description, link, parralax=false }) {
     return (
-        <motion.div
+        <MotionDiv
             initial={!parralax ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -24,7 +26,7 @@ export function SecondaryProject({ name, description, link, parralax=false }) {
                 </a>
             </div>
 
-        </motion.div>
+        </MotionDiv>
     )
 
 }

@@ -31,8 +31,6 @@ function FeedPath({ experience, path = defaultPath }) {
 
     const [progress, setProgress] = useState(0);
     const [length, setLength] = useState(0);
-    const [pointX, setPointX] = useState(0);
-    const [pointY, setPointY] = useState(0);
     const [expandedCards, setExpandedCards] = useState([]);
 
     useEffect(() => {
@@ -72,16 +70,9 @@ function FeedPath({ experience, path = defaultPath }) {
                 pathRef.current.ownerSVGElement.getBoundingClientRect();
 
             const svgViewBoxHeight = 700;
-            const svgViewBoxWidth = 100;
-
-            const scaleX =
-                svgRect.width / svgViewBoxWidth;
 
             const scaleY =
                 svgRect.height / svgViewBoxHeight;
-
-            const pointX =
-                svgRect.left + point.x * scaleX;
 
             const pointY =
                 svgRect.top + point.y * scaleY;
@@ -99,8 +90,6 @@ function FeedPath({ experience, path = defaultPath }) {
             });
 
             setExpandedCards(expanded);
-            setPointX(pointX);
-            setPointY(pointY);
         }
 
         handleScroll();

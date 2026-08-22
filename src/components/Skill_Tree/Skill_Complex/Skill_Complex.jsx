@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import './Skill_Complex.css';
 import SkillNode from '../Skill_Node/Skill_Node.jsx';
 
+const MotionDiv = motion.div;
+
 function AnimatedEdge({ from, to, color, bulgeColor, period = 2.5 }) {
 	const [progress, setProgress] = useState(0);
 	const rafRef = useRef();
@@ -46,7 +48,7 @@ function AnimatedEdge({ from, to, color, bulgeColor, period = 2.5 }) {
 
 function SkillComplex({ nodes, edges }) {
 	return (
-		<motion.div 
+		<MotionDiv 
 			className="skill-complex-container"
 			initial={{ opacity: 0, y: 100 }}
 			whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +95,7 @@ function SkillComplex({ nodes, edges }) {
 					</motion.div>
 				</div>
 			))}
-		</motion.div>
+		</MotionDiv>
 	);
 }
 

@@ -2,6 +2,8 @@ import { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
 import './Honeycomb_Background.css';
 
+const MotionDiv = motion.div;
+
 function HoneycombBackground({ 
     width, 
     height, 
@@ -62,7 +64,7 @@ function HoneycombBackground({
             key={rowIdx}
         >
             {Array.from({ length: width }).map((_, colIdx) => (
-                <motion.div
+                <MotionDiv
                     key={`${rowIdx}-${colIdx}`}
                     id={`hex-${rowIdx}-${colIdx}`}
                     className="honeycomb-background"
