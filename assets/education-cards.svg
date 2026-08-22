@@ -1,0 +1,61 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Education: BSc Honours in Computer Science, BSc in Computer Science, National Senior Certificate.">
+  <defs>
+    <style>
+      :root{ --bg:#eaf7fb; --text:#0b1f2a; --primary:#176b87; --secondary:#8fd3e8; --accent:#25a9d6; }
+      @media (prefers-color-scheme: dark){
+        :root{ --bg:#07151b; --text:#dff5fa; --primary:#7bcce3; --secondary:#185d73; --accent:#39c6ed; }
+      }
+      .card{ fill:var(--bg); stroke:var(--secondary); stroke-width:1.5; }
+      .band{ fill:var(--primary); }
+      .icon{ fill:none; stroke:var(--accent); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+      .qual{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:700; font-size:19px; }
+      .inst{ fill:var(--accent); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:600; font-size:13px; letter-spacing:0.5px; }
+      .period{ fill:var(--text); font-family:'Consolas','SFMono-Regular',monospace; font-size:12.5px; opacity:0.8; }
+      .note{ fill:var(--text); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-size:13px; opacity:0.85; }
+      .pill{ fill:none; stroke:var(--accent); stroke-width:1.4; }
+      .pilltext{ fill:var(--accent); font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-weight:600; font-size:11px; }
+    </style>
+  </defs>
+
+  <!-- Card 1: BSc Honours -->
+  <g transform="translate(0,0)">
+    <rect x="1" y="1" width="898" height="128" rx="16" class="card"/>
+    <rect x="1" y="1" width="7" height="128" rx="3.5" class="band"/>
+    <circle cx="52" cy="64" r="26" class="icon"/>
+    <path class="icon" d="M40 60 L52 54 L64 60 L52 66 Z M40 60 L40 72 M64 60 L64 72 M46 68 C46 74 58 74 58 68"/>
+    <text x="96" y="42" class="qual">BSc Honours in Computer Science</text>
+    <text x="96" y="63" class="inst">UNIVERSITY OF PRETORIA</text>
+    <text x="96" y="86" class="period">2026 · in progress</text>
+    <rect x="740" y="24" width="138" height="26" rx="13" class="pill"/>
+    <text x="809" y="41" text-anchor="middle" class="pilltext">IN PROGRESS</text>
+    <text x="96" y="108" class="note">Deepening focus on research, systems, and advanced software engineering.</text>
+  </g>
+
+  <!-- Card 2: BSc -->
+  <g transform="translate(0,146)">
+    <rect x="1" y="1" width="898" height="128" rx="16" class="card"/>
+    <rect x="1" y="1" width="7" height="128" rx="3.5" class="band"/>
+    <circle cx="52" cy="64" r="26" class="icon"/>
+    <path class="icon" d="M40 60 L52 54 L64 60 L52 66 Z M40 60 L40 72 M64 60 L64 72 M46 68 C46 74 58 74 58 68"/>
+    <text x="96" y="42" class="qual">BSc in Computer Science</text>
+    <text x="96" y="63" class="inst">UNIVERSITY OF PRETORIA</text>
+    <text x="96" y="86" class="period">2023 – 2025</text>
+    <rect x="670" y="24" width="208" height="26" rx="13" class="pill"/>
+    <text x="774" y="41" text-anchor="middle" class="pilltext">BEST AGILE METHODOLOGY</text>
+    <text x="96" y="108" class="note">Built Green-Cart, an eco-friendly e-commerce platform, as final year capstone.</text>
+  </g>
+
+  <!-- Card 3: NSC -->
+  <g transform="translate(0,292)">
+    <rect x="1" y="1" width="898" height="128" rx="16" class="card"/>
+    <rect x="1" y="1" width="7" height="128" rx="3.5" class="band"/>
+    <circle cx="52" cy="64" r="26" class="icon"/>
+    <path class="icon" d="M40 60 L52 54 L64 60 L52 66 Z M40 60 L40 72 M64 60 L64 72 M46 68 C46 74 58 74 58 68"/>
+    <text x="96" y="42" class="qual">National Senior Certificate</text>
+    <text x="96" y="63" class="inst">EDENVALE HIGH SCHOOL</text>
+    <text x="96" y="86" class="period">2018 – 2022</text>
+    <rect x="792" y="24" width="86" height="26" rx="13" class="pill"/>
+    <text x="835" y="41" text-anchor="middle" class="pilltext">IT · 85%</text>
+    <text x="96" y="108" class="note">Matriculated with Information Technology as a subject.</text>
+  </g>
+</svg>

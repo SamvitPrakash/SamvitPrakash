@@ -21,17 +21,17 @@
 
 [![About Me](assets/header-about.svg)](#about-me)
 
-I graduated with a **BSc in Computer Science** from the University of Pretoria and am now completing my **BSc Honours**. Alongside my studies I work as a **Lecturer's Assistant / Tutor**, breaking down Programming Languages, Data Structures, and Imperative Programming for undergrads — which has probably made me a better communicator than most of my code comments suggest.
+> I graduated with a **BSc in Computer Science** from the University of Pretoria and am now completing my **BSc Honours**. Alongside my studies I work as a **Lecturer's Assistant / Tutor**, breaking down Programming Languages, Data Structures, and Imperative Programming for undergrads — which has probably made me a better communicator than most of my code comments suggest.
 
 I see myself as a designer, creator, and lifelong learner. My main interest is **back-end and full-stack development**, but I spend a healthy amount of time in **cybersecurity** and **Linux systems tinkering** — [Direwolf](https://github.com/SamvitPrakash/Direwolf), my custom Wayland/Hyprland desktop shell, is where most of that energy goes when I'm not shipping features for clients or coursework.
 
-| | |
+<!-- | | |
 | --- | --- |
 | 🎓 | BSc Honours in Computer Science, University of Pretoria — *in progress, 2026* |
 | 💼 | Lecturer's Assistant / Tutor, University of Pretoria |
 | 🛠️ | Back-end leaning full-stack developer |
 | 🌱 | Currently exploring cybersecurity and desktop shell engineering |
-| 🏆 | Best Agile Methodology prize (sponsored by Agile Bridge) — Green-Cart, final year capstone |
+| 🏆 | Best Agile Methodology prize (sponsored by Agile Bridge) — Green-Cart, final year capstone | -->
 
 <br/>
 
@@ -145,11 +145,7 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 [![Education](assets/header-education.svg)](#education)
 
-| Qualification | Institution | Period | Notes |
-| --- | --- | --- | --- |
-| BSc Honours in Computer Science | University of Pretoria | 2026 (in progress) | — |
-| BSc in Computer Science | University of Pretoria | 2023 – 2025 | Built Green-Cart, final year capstone, best Agile Methodology prize |
-| National Senior Certificate | Edenvale High School | 2018 – 2022 | Information Technology — 85% |
+<img src="./assets/education-cards.svg" alt="Education">
 
 <br/>
 
@@ -157,19 +153,11 @@ Eco-friendly e-commerce platform built by a team of 5 as our final year capstone
 
 <div align="center">
 
-<!-- <img src="https://github-readme-stats.vercel.app/api?username=SamvitPrakash&show_icons=true&theme=transparent&hide_border=true&title_color=25A9D6&icon_color=176B87&text_color=0B1F2A&ring_color=25A9D6" alt="Samvit's GitHub stats" height="165"/> -->
-
 <img src="./assets/stats.svg" alt="Samvits's GitHub stats" height="165">
-
-<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamvitPrakash&layout=compact&theme=transparent&hide_border=true&title_color=25A9D6&text_color=0B1F2A&langs_count=8" alt="Top languages" height="165"/> -->
 
 <img src="./assets/top-langs.svg" alt="Top Languages" height="165">
 
-<!-- <img src="https://streak-stats.demolab.com/?user=SamvitPrakash&theme=transparent&hide_border=true&ring=25A9D6&fire=25A9D6&currStreakLabel=25A9D6&sideLabels=0B1F2A&dates=0B1F2A" alt="GitHub streak"/> -->
-
 <img src="./assets/streak.svg" alt="GitHub streak">
-
-<!-- <img src="https://github-profile-trophy.vercel.app/?username=SamvitPrakash&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub trophies"/> -->
 
 <img src="./assets/trophy.svg" alt="GitHub trophies" >
 
