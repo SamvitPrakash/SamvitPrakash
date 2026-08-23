@@ -8,6 +8,7 @@ import HoneycombBackground from '../../components/Honeycomb_Background/Honeycomb
 import SecondaryProject from '../../components/Secondary_Project/SecondaryProject.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 import direwolfCover from '../../../assets/Projects/Direwolf/Cover.png'
 import auroraCover from '../../../assets/Projects/Aurora/Cover.mp4'
@@ -244,7 +245,7 @@ export function Projects() {
 
             {/* <h2 className='upcomming-projects-title'>Upcoming <span className='name'>Projects</span></h2> */}
 
-            <p className='conclusion-description'>I hope you <em>enjoyed</em> my projects. <em>Don't forget</em> to check out my <a href='/'>home</a> & <a href='/about'>about</a> pages!</p>
+            <p className='conclusion-description'>I hope you <em>enjoyed</em> my projects. <em>Don't forget</em> to check out my <Link to='/'>home</Link> page!</p>
 
             <ScrollToTopButton />
 

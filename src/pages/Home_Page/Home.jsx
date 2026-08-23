@@ -17,6 +17,7 @@ import Gallery from '../../components/Gallery/Gallery.jsx';
 import FeedPath from '../../components/Feed_Path/Feed_Path.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 // Asset Imports
 import upLogo from '../../../assets/University_of_Pretoria/UP_logo.jpeg';
@@ -439,7 +440,7 @@ function Home() {
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
-			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <a href='/projects'>projects</a> & <a href='/about'>about</a> pages!</p>
+			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <Link to='/projects'>projects</Link> page!</p>
 
 			<ScrollToTopButton />
 
