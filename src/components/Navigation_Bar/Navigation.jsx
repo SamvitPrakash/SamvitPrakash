@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Navigation.css';
 import ThemeButton from '../Theme_Button/Theme_Button.jsx';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -55,8 +56,8 @@ const Navigation = () => {
 		<nav className="navigation">
 			<h4 className="logo">My Portfolio</h4>
 			<div className='nav-links'>
-				<a href="/">Home</a>
-				<a href="/projects">Projects</a>
+				<Link to="/">Home</Link>
+				<Link to="/projects">Projects</Link>
 				{/* <a href="#about">What's New</a>
 				<a href="#contact">Contact Me</a> */}
 				<ThemeButton isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />

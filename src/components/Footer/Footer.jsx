@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
     return (
@@ -9,17 +10,17 @@ export function Footer() {
             <div className="footer-columns">
                 <div className="footer-column">
                     <h5 className="footer-column-title">Home</h5>
-                    <a href="/#bio">Bio</a>
-                    <a href="/#education">Educational Background</a>
-                    <a href="/#skills">Technical Skills</a>
-                    <a href="/#work">Work Experience</a>
+                    <Link to="/#bio">Bio</Link>
+                    <Link to="/#education">Educational Background</Link>
+                    <Link to="/#skills">Technical Skills</Link>
+                    <Link to="/#work">Work Experience</Link>
                 </div>
 
                 <div className="footer-column">
                     <h5 className="footer-column-title">Projects</h5>
-                    <a href="#projects">Direwolf</a>
-                    <a href="#projects">Aurora</a>
-                    <a href="#projects">GreenCart</a>
+                    <Link to="/projects#projects">Direwolf</Link>
+                    <Link to="/projects#projects">Aurora</Link>
+                    <Link to="/projects#projects">GreenCart</Link>
                 </div>
 
                 {/* <div className="footer-column">
