@@ -2,8 +2,7 @@
 import './Home.css'
 import { motion } from 'motion/react'
 import { FaGithub } from 'react-icons/fa';
-
-const MotionDiv = motion.div;
+import { Link } from 'react-router-dom';
 
 //Component Imports
 import Navigation from "../../components/Navigation_Bar/Navigation.jsx";
@@ -17,7 +16,7 @@ import Gallery from '../../components/Gallery/Gallery.jsx';
 import FeedPath from '../../components/Feed_Path/Feed_Path.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import { Link } from 'react-router-dom';
+import { useScreenWidth } from '../../utilities/screen_width';
 
 // Asset Imports
 import upLogo from '../../../assets/University_of_Pretoria/UP_logo.jpeg';
@@ -55,10 +54,14 @@ import phpMyAdmin from '../../../assets/Skill_Icons/phpMyAdmin.svg';
 import sfy from '../../../assets/Company_Icons/SFY.jpg';
 import SwarmCursor from '../../components/Swarm_Cursor/Swarm_Cursor.jsx';
 
-function Home() {
+const MotionDiv = motion.div;
 
+function Home() {
+	const screenWidth = useScreenWidth();
+	console.log(screenWidth);
+	
 	const visibilityMatrixEducation = [
-			[1,1,0,0,0,0,0,0,0,1,1],
+		[1,1,0,0,0,0,0,0,0,1,1],
 			[1,0,1,0,1,0,1,1,0,1,1],
 			[0,1,0,1,1,1,0,1,1,1,0],
 			[0,1,1,1,1,1,1,1,1,1,0],
@@ -411,7 +414,7 @@ function Home() {
 			</HoneycombBackground>
 
 			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrixSkills} animate={false} overflow>
-				<SkillComplex nodes={small_computer_nodes} edges={edges} />
+				<SkillComplex nodes={screenWidth < 1260 ? small_computer_nodes : nodes} edges={edges} />
 			</HoneycombBackground>
 
 			<MotionDiv
