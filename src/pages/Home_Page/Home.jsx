@@ -231,6 +231,33 @@ function Home() {
 		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
 		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
 	];
+
+		const small_computer_nodes = [
+		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
+		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
+		{ id: 3, icon: django, name: "Django", x: 1040, y: 230 },
+		{ id: 4, icon: javascript, name: "JavaScript", x: 400, y: 290 },
+		{ id: 5, icon: typescript, name: "TypeScript", x: 850, y: 400 },
+		{ id: 6, icon: nodejs, name: "Node.js", x: 1050, y: 590 },
+		{ id: 7, icon: html, name: "HTML", x: 400, y: 50 },
+		{ id: 8, icon: css, name: "CSS", x: 200, y: 350 },
+		{ id: 9, icon: python, name: "Python", x: 600, y: 550 },
+		{ id: 10, icon: java, name: "Java", x: 350, y: 750 },
+		{ id: 11, icon: cpp, name: "C++", x: 990, y: 970 },
+		{ id: 12, icon: c, name: "C", x: 570, y: 900 },
+		{ id: 13, icon: csharp, name: "C#", x: 220, y: 540 },
+		{ id: 14, icon: delphi, name: "Delphi", x: 580, y: 700 },
+		{ id: 15, icon: php, name: "PHP", x: 800, y: 750 },
+		{ id: 16, icon: bash, name: "Bash", x: 355, y: 1000 },
+		{ id: 17, icon: docker, name: "Docker", x: 200, y: 900 },
+		{ id: 18, icon: vite, name: "Vite", x: 650, y: 350 },
+		{ id: 19, icon: vue, name: "Vue.js", x: 1050, y: 800 },
+		{ id: 20, icon: arch, name: "Arch Linux", x: 1000, y: 1200 },
+		{ id: 21, icon: garuda, name: "Garuda Linux", x: 700, y: 1345 },
+		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
+		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
+	];
+
 	const edges = [
 		{ from: 1, to: 2 },
 		{ from: 2, to: 3 },
@@ -383,8 +410,8 @@ function Home() {
 				<h2 className="technical-skills-title" id='skills'><span className="name">Technical</span> Skills.</h2>
 			</HoneycombBackground>
 
-			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrixSkills} animate={false}>
-				<SkillComplex nodes={nodes} edges={edges} />
+			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrixSkills} animate={false} overflow>
+				<SkillComplex nodes={small_computer_nodes} edges={edges} />
 			</HoneycombBackground>
 
 			<MotionDiv
@@ -436,11 +463,11 @@ function Home() {
 
 			<h2 className='work-experience-title' id='work'>Work <span className='name'>Experience</span>/<span className='name'>Journey</span></h2>
 
-			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false} parrallax={true}>
+			<HoneycombBackground width={11} height={60} visibilityMatrix={visibilityMatrixExperience} animate={false} overflow parrallax>
 				<FeedPath experience={experienceFeed} />
 			</HoneycombBackground>
 
-			<p className='conclusion-description'>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <Link to='/projects'>projects</Link> page!</p>
+			<p className='conclusion-description' style={{ overflow: "hidden" }}>I hope you <em>enjoyed</em> my portfolio. <em>Don't forget</em> to check out my <Link to='/projects'>projects</Link> page!</p>
 
 			<ScrollToTopButton />
 

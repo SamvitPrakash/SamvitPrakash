@@ -8,10 +8,12 @@ import Projects from './pages/Projects_Page/Projects.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <div className="src">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+    </div>
     </BrowserRouter>
   </StrictMode>
 )

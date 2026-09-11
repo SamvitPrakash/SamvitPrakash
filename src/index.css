@@ -208,6 +208,12 @@ body {
 	font-weight: 400;
 }
 
+.src{
+	position: relative;
+    width: 100%;
+    overflow-x: clip;
+}
+
 h1,
 h2,
 h3,
