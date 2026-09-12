@@ -36,8 +36,8 @@
     }
 }
 
-@media (max-width: 320px) {
-    .carousel-slide {
-        width: 20rem;
+@media (max-width: 800px) {
+    .skill-tree-description-container {
+        display: none;
     }
 }
