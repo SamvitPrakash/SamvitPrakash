@@ -58,7 +58,6 @@ const MotionDiv = motion.div;
 
 function Home() {
 	const screenWidth = useScreenWidth();
-	console.log(screenWidth);
 	
 	const visibilityMatrixEducation = [
 		[1,1,0,0,0,0,0,0,0,1,1],
@@ -235,15 +234,15 @@ function Home() {
 		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
 	];
 
-		const small_computer_nodes = [
+	const small_computer_nodes = [
 		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
 		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
-		{ id: 3, icon: django, name: "Django", x: 1040, y: 230 },
+		{ id: 3, icon: django, name: "Django", x: 1000, y: 250 },
 		{ id: 4, icon: javascript, name: "JavaScript", x: 400, y: 290 },
 		{ id: 5, icon: typescript, name: "TypeScript", x: 850, y: 400 },
 		{ id: 6, icon: nodejs, name: "Node.js", x: 1050, y: 590 },
 		{ id: 7, icon: html, name: "HTML", x: 400, y: 50 },
-		{ id: 8, icon: css, name: "CSS", x: 200, y: 350 },
+		{ id: 8, icon: css, name: "CSS", x: 250, y: 350 },
 		{ id: 9, icon: python, name: "Python", x: 600, y: 550 },
 		{ id: 10, icon: java, name: "Java", x: 350, y: 750 },
 		{ id: 11, icon: cpp, name: "C++", x: 990, y: 970 },
@@ -254,7 +253,33 @@ function Home() {
 		{ id: 16, icon: bash, name: "Bash", x: 355, y: 1000 },
 		{ id: 17, icon: docker, name: "Docker", x: 200, y: 900 },
 		{ id: 18, icon: vite, name: "Vite", x: 650, y: 350 },
-		{ id: 19, icon: vue, name: "Vue.js", x: 1050, y: 800 },
+		{ id: 19, icon: vue, name: "Vue.js", x: 1020, y: 810 },
+		{ id: 20, icon: arch, name: "Arch Linux", x: 1000, y: 1200 },
+		{ id: 21, icon: garuda, name: "Garuda Linux", x: 700, y: 1345 },
+		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
+		{ id: 23, icon: windows, name: "Windows", x: 850, y: 1100 },
+	];
+
+	const mobile_nodes = [
+		{ id: 1, icon: angular, name: "Angular", x: 975, y: 0 },
+		{ id: 2, icon: react, name: "React", x: 750, y: 200 },
+		{ id: 3, icon: django, name: "Django", x: 1000, y: 250 },
+		{ id: 4, icon: javascript, name: "JavaScript", x: 400, y: 290 },
+		{ id: 5, icon: typescript, name: "TypeScript", x: 850, y: 400 },
+		{ id: 6, icon: nodejs, name: "Node.js", x: 1050, y: 590 },
+		{ id: 7, icon: html, name: "HTML", x: 400, y: 50 },
+		{ id: 8, icon: css, name: "CSS", x: 250, y: 350 },
+		{ id: 9, icon: python, name: "Python", x: 600, y: 550 },
+		{ id: 10, icon: java, name: "Java", x: 350, y: 750 },
+		{ id: 11, icon: cpp, name: "C++", x: 990, y: 970 },
+		{ id: 12, icon: c, name: "C", x: 570, y: 900 },
+		{ id: 13, icon: csharp, name: "C#", x: 220, y: 540 },
+		{ id: 14, icon: delphi, name: "Delphi", x: 580, y: 700 },
+		{ id: 15, icon: php, name: "PHP", x: 800, y: 750 },
+		{ id: 16, icon: bash, name: "Bash", x: 355, y: 1000 },
+		{ id: 17, icon: docker, name: "Docker", x: 200, y: 900 },
+		{ id: 18, icon: vite, name: "Vite", x: 650, y: 350 },
+		{ id: 19, icon: vue, name: "Vue.js", x: 1020, y: 810 },
 		{ id: 20, icon: arch, name: "Arch Linux", x: 1000, y: 1200 },
 		{ id: 21, icon: garuda, name: "Garuda Linux", x: 700, y: 1345 },
 		{ id: 22, icon: ubuntu, name: "Ubuntu", x: 250, y: 1200 },
