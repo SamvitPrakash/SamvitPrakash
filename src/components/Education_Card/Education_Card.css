@@ -4,7 +4,7 @@
     border-radius: 10px;
     background-color: var(--current-primary);
     box-shadow: 0 8px 24px rgba(var(--current-primary-rgb), 0.2), 0 1.5px 4px rgba(var(--current-primary-rgb), 0.15);
-    max-width: clamp(18rem, 27vw, 25rem);
+    max-width: clamp(17rem, 27vw, 25rem);
     height: clamp(22rem, 27vw, 24rem);
     display: flex;
     flex-direction: column;

@@ -1,5 +1,9 @@
 import './Projects.css'
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
+import { useScreenWidth } from '../../utilities/screen_width.jsx';
+
 import Navigation from '../../components/Navigation_Bar/Navigation.jsx';
 import TypedName from '../../components/Typed_Name/Typed_Name.jsx';
 import ScrollExpand from '../../components/Scroll_Expand/ScrollExpand.jsx';
@@ -8,16 +12,19 @@ import HoneycombBackground from '../../components/Honeycomb_Background/Honeycomb
 import SecondaryProject from '../../components/Secondary_Project/SecondaryProject.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import { Link } from 'react-router-dom';
 
 import direwolfCover from '../../../assets/Projects/Direwolf/Cover.png'
 import auroraCover from '../../../assets/Projects/Aurora/Cover.mp4'
 import greencartCover from '../../../assets/Projects/Greencart/Cover.mp4'
-import { FaGithub } from 'react-icons/fa';
 
 const MotionDiv = motion.div;
 
 export function Projects() {
+    const screenWidth = useScreenWidth();
+
+    const width = Math.min(42, Math.max(25, screenWidth * 0.041));
+    const height = width;
+
     const visibilityMatrixSecondaryProjects = [
         [0,0,0,0,0,0,0,0,0,0,0],  
 		[0,0,0,0,0,0,0,0,0,0,0],  
@@ -121,6 +128,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='direwolf'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -135,6 +143,8 @@ export function Projects() {
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-direwolf'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
 
@@ -155,6 +165,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='aurora'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -165,12 +176,14 @@ export function Projects() {
                     <ScrollExpand 
                         src={auroraCover} 
                         title='Aurora' 
-                        poster={direwolfCover}
+                        // poster={direwolfCover}
                         alt='Aurora project cover' 
                         mediaType='video'
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-aurora'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
                         <InformationModal className='project-content'>
@@ -189,6 +202,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='greencart'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -199,12 +213,14 @@ export function Projects() {
                     <ScrollExpand 
                         src={greencartCover} 
                         title='GreenCart' 
-                        poster={direwolfCover}
+                        // poster={direwolfCover}
                         alt='GreenCart project cover' 
                         mediaType='video'
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-greencart'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
                         <InformationModal className='project-content'>
@@ -221,7 +237,7 @@ export function Projects() {
                 </MotionDiv>
             </HoneycombBackground>
 
-            <h2 className='secondary-project-title'><span className='name'>Projects</span> Along the Way</h2>
+            <h2 className='secondary-project-title' id='secondary-projects'><span className='name'>Projects</span> Along the Way</h2>
 
             <HoneycombBackground width={11} height={20} visibilityMatrix={visibilityMatrixSecondaryProjects} animate parrallax>
                 <div className='secondary-projects-content-container'>

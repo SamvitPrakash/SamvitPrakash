@@ -18,17 +18,17 @@ export function Footer() {
 
                 <div className="footer-column">
                     <h5 className="footer-column-title">Projects</h5>
-                    <Link to="/projects#projects">Direwolf</Link>
-                    <Link to="/projects#projects">Aurora</Link>
-                    <Link to="/projects#projects">GreenCart</Link>
+                    <Link to="/projects#direwolf">Direwolf</Link>
+                    <Link to="/projects#aurora">Aurora</Link>
+                    <Link to="/projects#greencart">GreenCart</Link>
                 </div>
 
-                {/* <div className="footer-column">
-                    <h5 className="footer-column-title">About</h5>
-                    <a href="#about">What's New</a>
-                    <a href="#about">My Goals</a>
-                    <a href="#about">My Interests</a>
-                </div> */}
+                <div className="footer-column">
+                    <h5 className="footer-column-title">Links</h5>
+                    <a href="https://github.com/SamvitPrakash" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://www.linkedin.com/in/samvit-prakash/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:samvitprakash2004@gmail.com" target="_blank" rel="noopener noreferrer">samvitprakash2004@gmail.com</a>
+                </div>
 
                 {/* <div className="footer-column">
                     <h5 className="footer-column-title">Contact Me</h5>

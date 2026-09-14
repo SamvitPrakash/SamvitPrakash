@@ -1,25 +1,24 @@
-.navigation{
+.navigation {
     background-color: var(--current-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
     vertical-align: middle;
-    /* border-bottom: 1px solid var(--current-text); */
-    /* margin-bottom: clamp(8rem, 17vw, 15rem); */
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0rem;
+    position: relative;
+    z-index: 100;
 }
 
-.navigation h4{
+.navigation h4 {
     color: var(--current-primary);
     height: fit-content;
     margin: 0rem;
     padding: 0rem;
-    
 }
 
-.nav-links{
+.nav-links {
     color: var(--current-text);
     display: flex;
     gap: 2rem;
@@ -28,37 +27,148 @@
     padding: 0rem;
 }
 
-.nav-links a{
+.nav-links a {
     color: var(--current-text);
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: 400;
     transition: color 2.5s ease;
-    transition: font-size 2.5s ease-in;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     cursor: pointer;
     color: var(--current-accent);
-    /* font-weight: 700; */
     transition: color 1s ease;
-    transition: font-size 10s ease;
     text-decoration: underline var(--current-accent);
 }
 
-.nav-links #contact{
+.nav-links #contact {
     border: 2px solid var(--current-primary);
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: background-color 1s ease;
     transition: color 1s ease;
 }
 
-.nav-links #contact:hover{
+.nav-links #contact:hover {
     background-color: var(--current-primary);
     color: var(--current-background);
     font-weight: 700;
     transition: background-color 1s ease;
     transition: color 1s ease;
     text-decoration: none;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 102;
+}
+
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--current-text);
+    border-radius: 2px;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .navigation {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--current-background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        border-top: 1px solid
+            rgba(var(--current-text-rgb), 0.1);
+        box-shadow:
+            0 8px 20px
+            rgba(0, 0, 0, 0.08);
+
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+        z-index: 101;
+    }
+
+    .mobile-nav.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-nav a {
+        color: var(--current-text);
+        width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 400;
+        transition:
+            color 0.3s ease,
+            background-color 0.3s ease;
+    }
+
+    .mobile-nav a:hover {
+        color: var(--current-accent);
+        text-decoration: underline var(--current-accent);
+    }
+
+    .mobile-nav > *:last-child {
+        margin-top: 0.5rem;
+    }
+
+    .menu-button.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-button.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-button.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
 }
