@@ -212,6 +212,7 @@ body {
 	position: relative;
     width: 100%;
     overflow-x: clip;
+	scroll-behavior: smooth;
 }
 
 h1,
