@@ -128,6 +128,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='direwolf'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -164,6 +165,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='aurora'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -174,7 +176,7 @@ export function Projects() {
                     <ScrollExpand 
                         src={auroraCover} 
                         title='Aurora' 
-                        poster={direwolfCover}
+                        // poster={direwolfCover}
                         alt='Aurora project cover' 
                         mediaType='video'
                         scrollHint='Scroll to expand' 
@@ -200,6 +202,7 @@ export function Projects() {
                 <MotionDiv
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    id='greencart'
                     transition={{ 
                         duration: 1.5,
                         type: 'spring',
@@ -210,7 +213,7 @@ export function Projects() {
                     <ScrollExpand 
                         src={greencartCover} 
                         title='GreenCart' 
-                        poster={direwolfCover}
+                        // poster={direwolfCover}
                         alt='GreenCart project cover' 
                         mediaType='video'
                         scrollHint='Scroll to expand' 
@@ -234,7 +237,7 @@ export function Projects() {
                 </MotionDiv>
             </HoneycombBackground>
 
-            <h2 className='secondary-project-title'><span className='name'>Projects</span> Along the Way</h2>
+            <h2 className='secondary-project-title' id='secondary-projects'><span className='name'>Projects</span> Along the Way</h2>
 
             <HoneycombBackground width={11} height={20} visibilityMatrix={visibilityMatrixSecondaryProjects} animate parrallax>
                 <div className='secondary-projects-content-container'>
