@@ -1,5 +1,9 @@
 import './Projects.css'
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
+import { useScreenWidth } from '../../utilities/screen_width.jsx';
+
 import Navigation from '../../components/Navigation_Bar/Navigation.jsx';
 import TypedName from '../../components/Typed_Name/Typed_Name.jsx';
 import ScrollExpand from '../../components/Scroll_Expand/ScrollExpand.jsx';
@@ -8,16 +12,19 @@ import HoneycombBackground from '../../components/Honeycomb_Background/Honeycomb
 import SecondaryProject from '../../components/Secondary_Project/SecondaryProject.jsx';
 import ScrollToTopButton from '../../components/Scroll_To_Top/Scroll_To_Top.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import { Link } from 'react-router-dom';
 
 import direwolfCover from '../../../assets/Projects/Direwolf/Cover.png'
 import auroraCover from '../../../assets/Projects/Aurora/Cover.mp4'
 import greencartCover from '../../../assets/Projects/Greencart/Cover.mp4'
-import { FaGithub } from 'react-icons/fa';
 
 const MotionDiv = motion.div;
 
 export function Projects() {
+    const screenWidth = useScreenWidth();
+
+    const width = Math.min(42, Math.max(25, screenWidth * 0.041));
+    const height = width;
+
     const visibilityMatrixSecondaryProjects = [
         [0,0,0,0,0,0,0,0,0,0,0],  
 		[0,0,0,0,0,0,0,0,0,0,0],  
@@ -135,6 +142,8 @@ export function Projects() {
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-direwolf'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
 
@@ -171,6 +180,8 @@ export function Projects() {
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-aurora'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
                         <InformationModal className='project-content'>
@@ -205,6 +216,8 @@ export function Projects() {
                         scrollHint='Scroll to expand' 
                         endRadius='22'
                         className='project-title-greencart'
+                        startHeight={height}
+                        startWidth={width}
                         useWindowScroll
                     >
                         <InformationModal className='project-content'>

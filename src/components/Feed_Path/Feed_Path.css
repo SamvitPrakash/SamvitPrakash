@@ -28,3 +28,19 @@
     align-self: end;
     z-index: 1;
 }
+
+@media (max-width: 640px){
+    .feed-path-left {
+        padding-left: 0rem;
+        align-self: start;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .feed-path-right {
+        padding-left: 0rem;
+        align-self: start;
+        width: 100%;
+        z-index: 1;
+    }
+}

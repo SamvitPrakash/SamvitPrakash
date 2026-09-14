@@ -121,4 +121,12 @@ h2{
         text-align: center;
         padding-right: 0rem;
     }
+
+}
+
+@media (max-width: 767px){
+    .bio-text{
+        display: none;
+    }
+
 }
