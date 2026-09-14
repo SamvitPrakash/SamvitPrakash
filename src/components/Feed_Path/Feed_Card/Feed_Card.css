@@ -1,6 +1,7 @@
 .feed-card-container {
     position: relative;
     width: fit-content;
+    min-width: 25rem;
 }
 
 .node-wrapper {
@@ -106,4 +107,19 @@
     color: var(--opposite-text);
     text-align: left;
     margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+
+    .feed-description {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .feed-card-container {
+        position: relative;
+        width: 100%;
+        /* min-width: 25rem; */
+    }
 }

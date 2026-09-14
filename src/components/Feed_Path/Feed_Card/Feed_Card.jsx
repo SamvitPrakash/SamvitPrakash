@@ -48,7 +48,7 @@ function FeedCard({ icon, institution, position, year, description, link, expand
                 <div className="feed-body">
                     <h5 className="feed-degree">{position}</h5>
 
-                    <p>
+                    <p className="feed-description">
                         {description}
                         <span
                             className="blinking-cursor"

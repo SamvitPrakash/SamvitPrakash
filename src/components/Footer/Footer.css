@@ -62,3 +62,9 @@
     transition: font-size 10s ease;
     text-decoration: underline var(--current-accent);
 }
+
+@media (max-width: 768px) {
+    .footer{
+        display: none;
+    }
+}
