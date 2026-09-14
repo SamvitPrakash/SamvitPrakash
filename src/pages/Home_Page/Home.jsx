@@ -351,6 +351,18 @@ function Home() {
 		{ from: 21, to: 23 },
 	];
 
+	const getNodes = () => {
+		if (screenWidth >= 1200) {
+			return nodes;
+		} else if (screenWidth >= 979) {
+			return small_computer_nodes;
+		} else if (screenWidth >= 789) {
+			return tablet_nodes;
+		} else {
+			return mobile_nodes;
+		}
+	}
+
 	return (
 		<>
 			<Navigation />
@@ -465,7 +477,7 @@ function Home() {
 			</HoneycombBackground>
 
 			<HoneycombBackground width={11} height={15} visibilityMatrix={visibilityMatrixSkills} animate={false} overflow>
-				<SkillComplex nodes={mobile_nodes} edges={edges} />
+				<SkillComplex nodes={getNodes()} edges={edges} />
 				{/* {screenWidth < 1260 ? small_computer_nodes : nodes} */}
 			</HoneycombBackground>
 
